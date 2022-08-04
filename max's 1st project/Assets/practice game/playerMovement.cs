@@ -13,6 +13,14 @@ public class playerMovement : MonoBehaviour
     public bool grounded;
 
     public LayerMask mask;
+
+    public LayerMask wallmask;
+
+    public int walldirection;
+
+    public bool touchingWall;
+
+
     private void Start()
     {
         
@@ -31,15 +39,37 @@ public class playerMovement : MonoBehaviour
 
         
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 0.6f, mask);
-        
+        RaycastHit2D hitright = Physics2D.Raycast(transform.position, Vector2.right, 0.6f, wallmask);
+        RaycastHit2D hitleft = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, wallmask);
+
+        if (hitright.rigidbody != null || hitleft.rigidbody != null)
+        {
+            touchingWall = true;
+
+            if(hitright.rigidbody != null)
+            {
+                walldirection = -1;
+            }
+            else
+            {
+                walldirection = 1;
+            }
+        }
+        else
+        {
+            touchingWall = false;
+            walldirection = 0;
+        }
+
         if (hit.rigidbody != null) {
             grounded = true;
-        }else
+        }
+        else
         {
             grounded = false;
         }
 
-        if (grounded &&Input.GetKeyDown("space"))
+        if ((grounded||touchingWall) &&Input.GetKeyDown("space"))
         {
             rb.AddForce(Vector2.up * jump);
         }
