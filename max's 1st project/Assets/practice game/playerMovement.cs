@@ -6,6 +6,8 @@ public class playerMovement : MonoBehaviour
 {
     public float moveSpeed = 10f;
 
+    public float maxSpeed = 20f;
+
     public float jump = 50f;
 
     public float wallJump = 75f;
@@ -46,7 +48,10 @@ public class playerMovement : MonoBehaviour
         {
             rb.AddForce(Vector2.right * moveSpeed);
         }
-
+        if (rb.velocity.x >maxSpeed)
+        {
+            rb.velocity = new Vector2(maxSpeed, rb.velocity.y);
+        }
         
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 0.6f, mask);
         RaycastHit2D hitright = Physics2D.Raycast(transform.position, Vector2.right, 0.6f, wallmask);
@@ -67,7 +72,7 @@ public class playerMovement : MonoBehaviour
                 walldirection = 1;
             }
 
-            if (canWallJump && !hasWallJumped)
+            if (touchingWall && !canWallJump)
             {
                 StartCoroutine("WallJumpTimer");
             }
@@ -78,6 +83,7 @@ public class playerMovement : MonoBehaviour
         {
             touchingWall = false;
             walldirection = 0;
+            canWallJump = false;
         }
 
         if (hit.rigidbody != null) {
@@ -99,7 +105,7 @@ public class playerMovement : MonoBehaviour
 
                 rb.AddForce(jumpDir * wallJump);
 
-                hasWallJumped = true;
+                canWallJump = false;
             }
 
             else if (grounded)
@@ -107,7 +113,7 @@ public class playerMovement : MonoBehaviour
             {
                 rb.AddForce(Vector2.up * jump);
 
-                hasWallJumped = false;
+               
             }
         }
 
@@ -117,7 +123,7 @@ public class playerMovement : MonoBehaviour
     {
         canWallJump = false;
 
-        hasWallJumped = false;
+        
 
         yield return new WaitForSeconds(wallJumpTimer);
 
