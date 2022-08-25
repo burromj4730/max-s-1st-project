@@ -8,6 +8,8 @@ public class playerMovement : MonoBehaviour
 
     public float jump = 50f;
 
+    public float wallJump = 75f;
+
     public Rigidbody2D rb;
 
     public bool grounded;
@@ -19,6 +21,14 @@ public class playerMovement : MonoBehaviour
     public int walldirection;
 
     public bool touchingWall;
+
+    public bool canWallJump = false;
+
+    public bool hasWallJumped = false;
+
+    public float wallJumpTimer = 0.5f;
+
+    public float wallUpForce = 1f;
 
 
     private void Start()
@@ -45,7 +55,9 @@ public class playerMovement : MonoBehaviour
         if (hitright.rigidbody != null || hitleft.rigidbody != null)
         {
             touchingWall = true;
-
+            
+            
+            
             if(hitright.rigidbody != null)
             {
                 walldirection = -1;
@@ -54,6 +66,13 @@ public class playerMovement : MonoBehaviour
             {
                 walldirection = 1;
             }
+
+            if (canWallJump && !hasWallJumped)
+            {
+                StartCoroutine("WallJumpTimer");
+            }
+
+            
         }
         else
         {
@@ -69,9 +88,40 @@ public class playerMovement : MonoBehaviour
             grounded = false;
         }
 
-        if ((grounded||touchingWall) &&Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space"))
         {
-            rb.AddForce(Vector2.up * jump);
+            if (touchingWall&&canWallJump)
+            {
+
+                Vector2 jumpDir = new Vector2(1 * walldirection, wallUpForce);
+
+                rb.velocity = Vector2.zero;
+
+                rb.AddForce(jumpDir * wallJump);
+
+                hasWallJumped = true;
+            }
+
+            else if (grounded)
+            
+            {
+                rb.AddForce(Vector2.up * jump);
+
+                hasWallJumped = false;
+            }
         }
+
+    }
+
+    private IEnumerator WallJumpTimer()
+    {
+        canWallJump = false;
+
+        hasWallJumped = false;
+
+        yield return new WaitForSeconds(wallJumpTimer);
+
+        canWallJump = true;
+
     }
 }
