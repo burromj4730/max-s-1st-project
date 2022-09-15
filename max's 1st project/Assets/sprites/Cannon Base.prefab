@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4867165386424079049}
   - component: {fileID: 3715328280744970310}
+  - component: {fileID: 4410211794669891258}
   m_Layer: 0
   m_Name: Cannon Base
   m_TagString: Untagged
@@ -29,7 +30,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6921466052045423413}
-  - {fileID: 9175756225569806997}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -84,6 +84,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4410211794669891258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3298259330496904417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4f6d384f044649b10d77e80bdf2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seePlayerRadius: 10
+  losePlayerRadius: 10
+  fireTimer: 10
+  maxAngle: 10
+  minAngle: 10
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
+  pivot: {fileID: 0}
+  weapon: {fileID: 6705399356149492550}
 --- !u!1 &6289890771085692932
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9175756225569806997}
   m_Layer: 0
-  m_Name: PivitPoint
+  m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,11 +130,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6289890771085692932}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0, y: -0.139, z: -347.90067}
-  m_LocalScale: {x: 1.0319918, y: 1.0319918, z: 1.0319918}
+  m_LocalPosition: {x: 0, y: 0.235, z: -224.62138}
+  m_LocalScale: {x: 0.33333337, y: 0.33333337, z: 1}
   m_Children: []
-  m_Father: {fileID: 4867165386424079049}
-  m_RootOrder: 1
+  m_Father: {fileID: 6921466052045423413}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1325417542195088186
 PrefabInstance:
@@ -121,6 +143,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4867165386424079049}
     m_Modifications:
+    - target: {fileID: 230291357409434462, guid: 526bfdfb39fb3a94ab26bbc393359953, type: 3}
+      propertyPath: m_Size.y
+      value: 0.3199735
+      objectReference: {fileID: 0}
+    - target: {fileID: 230291357409434462, guid: 526bfdfb39fb3a94ab26bbc393359953, type: 3}
+      propertyPath: m_DrawMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5722536958911078524, guid: 526bfdfb39fb3a94ab26bbc393359953, type: 3}
       propertyPath: m_Name
       value: CannonShooter
@@ -147,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8244165160018364431, guid: 526bfdfb39fb3a94ab26bbc393359953, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.623
+      value: -0.137
       objectReference: {fileID: 0}
     - target: {fileID: 8244165160018364431, guid: 526bfdfb39fb3a94ab26bbc393359953, type: 3}
       propertyPath: m_LocalPosition.z
@@ -193,24 +223,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8244165160018364431, guid: 526bfdfb39fb3a94ab26bbc393359953, type: 3}
   m_PrefabInstance: {fileID: 1325417542195088186}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5996787279800992757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6705399356149492550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48e4f6d384f044649b10d77e80bdf2ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seePlayerRadius: 10
-  losePlayerRadius: 10
-  fireTimer: 10
-  maxAngle: 10
-  minAngle: 10
-  mask:
-    serializedVersion: 2
-    m_Bits: 0
-  pivot: {fileID: 9175756225569806997}

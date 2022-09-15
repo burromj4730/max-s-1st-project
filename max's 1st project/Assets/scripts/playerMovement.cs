@@ -42,11 +42,11 @@ public class playerMovement : MonoBehaviour
     {
         if (Input.GetKey("left"))
         {
-            rb.AddForce(Vector2.left * moveSpeed);
+            rb.AddForce(Vector2.left * moveSpeed * Time.deltaTime);
         }
         else if (Input.GetKey("right"))
         {
-            rb.AddForce(Vector2.right * moveSpeed);
+            rb.AddForce(Vector2.right * moveSpeed * Time.deltaTime);
         }
         if (rb.velocity.x >maxSpeed)
         {
