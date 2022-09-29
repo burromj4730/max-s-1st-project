@@ -16,25 +16,26 @@ public class Cannon : MonoBehaviour
 
     public LayerMask mask;
 
-    public Transform pivot;
-
-    private Vector3 pivotPosition;
-
     private Vector3 playerLastPos;
 
     public GameObject weapon;
 
+    public GameObject bullet;
+
+    public Transform bulletSpawn;
+
+    private bool canShoot = true;
+
     // Start is called before the first frame update
     void Start()
     {
-        pivotPosition = pivot.position;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //RaycastHit2D[] hits = new RaycastHit2D[50];
-        //Physics2D.CircleCast(pivotPosition, seePlayerRadius, Vector2.down, mask, hits);
+        
 
         RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, seePlayerRadius, Vector2.up, 1);
 
@@ -46,8 +47,16 @@ public class Cannon : MonoBehaviour
                 {
                     playerLastPos = h.collider.gameObject.transform.position;
                     AimAtPlayer(h.collider.gameObject);
-                }
 
+                }
+                    if (canShoot)
+                {
+                    canShoot = false;
+
+                    Instantiate(bullet, bulletSpawn.position, weapon.transform.rotation);
+
+                    StartCoroutine("ShootDelay");
+                }
             }
         }
 
@@ -55,10 +64,6 @@ public class Cannon : MonoBehaviour
 
     void AimAtPlayer(GameObject player)
     {
-        //   float angle = Mathf.Asin((player.transform.position.x - pivotPosition.x) / Vector2.Distance(player.transform.position, pivotPosition));
-
-        // transform.RotateAround(pivotPosition, new Vector3(0, 0, 1), transform.rotation.z + (angle * Mathf.Rad2Deg));
-
         Vector2 target = new Vector2(player.transform.position.x - weapon.transform.position.x,
             player.transform.position.y - weapon.transform.position.y);
 
@@ -66,5 +71,10 @@ public class Cannon : MonoBehaviour
 
         weapon.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + -90));
     }
+    IEnumerator ShootDelay()
+    {
+        yield return new WaitForSeconds(fireTimer);
 
+        canShoot = true;
+    }
 }

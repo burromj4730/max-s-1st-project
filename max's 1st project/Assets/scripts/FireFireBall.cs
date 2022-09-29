@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class FireFireBall : MonoBehaviour
@@ -21,9 +22,14 @@ public class FireFireBall : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        Destroy(this.gameObject);
     }
+
 }
