@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Crusher : MonoBehaviour
 {
-    public float startPos;
+    private float startPos;
 
-    public float bottomPos;
+    private float bottomPos;
 
     public float moveUpspeed;
-
-    public float downGravityScale;
+    
+    [Range(0.001f, 1f)] public float downGravityScale;
 
     public float upTimer;
 
@@ -24,10 +24,14 @@ public class Crusher : MonoBehaviour
 
     public bool timerStarted;
 
+    public Rigidbody2D RB;
+
     // Start is called before the first frame update
     void Start()
     {
         startPos = transform.position.y;
+        bottomPos = startPos - 3.35f;
+        fallingDown = true;
     }
 
     // Update is called once per frame
@@ -35,23 +39,51 @@ public class Crusher : MonoBehaviour
     {
         if (!timerStarted)
         {
-            if (isUp || isDown)
-            {
-                if (isUp)
-                {
-                    StartCoroutine("UpTimer");
-                }
-                else
-                {
-                    StartCoroutine("DownTimer");
-                }
-                timerStarted = true;
-            }
             if (fallingDown && transform.position.y > bottomPos)
             {
-                //Scale up RB gravity scale then check still above bottom pos
+                RB.gravityScale += downGravityScale;
             }
+            else if (fallingDown && transform.position.y <= bottomPos)
+            {
+                RB.gravityScale = 0;
+                RB.velocity = Vector2.zero;
+                transform.position = new Vector3(transform.position.x, bottomPos, transform.position.z);
+                fallingDown = false;
 
+                StartCoroutine("DownTimer");
+
+            }
+            else if (transform.position.y >= startPos)
+            {
+                RB.velocity = Vector2.zero;
+                transform.position = new Vector3(transform.position.x, startPos, transform.position.z);
+
+                StartCoroutine("UpTimer");
+            }
+            else
+            {
+                
+                RB.velocity = new Vector2(0, moveUpspeed);
+            }
         }
     }
+
+    private IEnumerator UpTimer()
+    {
+        timerStarted = true;
+        yield return new WaitForSeconds(upTimer);
+        
+        fallingDown = true;
+        RB.gravityScale = 1;
+
+        timerStarted = false;
+    }
+    private IEnumerator DownTimer()
+    {
+        timerStarted = true;
+        yield return new WaitForSeconds(downTimer);
+        
+        timerStarted = false;
+    }
+
 }
