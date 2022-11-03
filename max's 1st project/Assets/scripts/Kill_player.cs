@@ -11,4 +11,12 @@ public class Kill_player : MonoBehaviour
              SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
 }
