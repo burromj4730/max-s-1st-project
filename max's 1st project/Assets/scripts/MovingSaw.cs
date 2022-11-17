@@ -16,6 +16,8 @@ public class MovingSaw : MonoBehaviour
 
     private int currentTarget;
 
+    Vector2 velocity;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,7 +55,15 @@ public class MovingSaw : MonoBehaviour
             }
 
             Vector2 moveDir = positions[currentTarget].position - transform.position;
-            RB.velocity = moveDir.normalized * moveSpeed * Time.deltaTime;
+            velocity = moveDir.normalized * moveSpeed;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (RB.velocity != velocity)
+        {
+            RB.velocity = velocity;
         }
     }
 }
