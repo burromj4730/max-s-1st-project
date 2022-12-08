@@ -10,13 +10,12 @@ public class CheckPoint : MonoBehaviour
 
     public GameObject player;
 
+    public int checkpointNumber;
+
     // Start is called before the first frame update
     void Awake()
     {
-        if (PlayerPrefs.GetInt("CheckP1") == 1)
-        {
-            player.transform.position = transform.position;
-        }
+        
     }
 
     // Update is called once per frame
@@ -32,7 +31,7 @@ public class CheckPoint : MonoBehaviour
 
             playerReached = true;
 
-            PlayerPrefs.SetInt("CheckP1", 1);
+            PlayerPrefs.SetInt("CheckP1", checkpointNumber);
             GetComponent<SpriteRenderer>().sprite = Spawnpoint;
         }
     }

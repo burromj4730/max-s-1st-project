@@ -8,6 +8,8 @@ public class Crusher : MonoBehaviour
 
     private float bottomPos;
 
+    public float bottomOffset = 3.35f;
+
     public float moveUpspeed;
     
     [Range(0.001f, 1f)] public float downGravityScale;
@@ -30,7 +32,7 @@ public class Crusher : MonoBehaviour
     void Start()
     {
         startPos = transform.position.y;
-        bottomPos = startPos - 3.35f;
+        bottomPos = startPos - bottomOffset;
         fallingDown = true;
     }
 

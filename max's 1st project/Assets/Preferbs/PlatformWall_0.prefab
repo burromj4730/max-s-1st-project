@@ -164,7 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffc01a4c01cd25a4bae69e7fd486b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movingUp: 1
   topPos: 5
+  botPos: 0
   moveSpeed: 5
   timer: 1.5
   useTimer: 1
