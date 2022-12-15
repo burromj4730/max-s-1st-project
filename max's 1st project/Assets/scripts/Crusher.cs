@@ -28,12 +28,16 @@ public class Crusher : MonoBehaviour
 
     public Rigidbody2D RB;
 
+    public float startDelay = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
         startPos = transform.position.y;
         bottomPos = startPos - bottomOffset;
         fallingDown = true;
+
+        StartCoroutine("StartDelay");
     }
 
     // Update is called once per frame
@@ -88,4 +92,11 @@ public class Crusher : MonoBehaviour
         timerStarted = false;
     }
 
+    private IEnumerator StartDelay()
+    {
+        timerStarted = true;
+        yield return new WaitForSeconds(startDelay);
+
+        timerStarted = false;
+    }
 }

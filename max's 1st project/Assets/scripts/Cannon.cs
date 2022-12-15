@@ -43,13 +43,21 @@ public class Cannon : MonoBehaviour
         {
             if(h.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
+
+                RaycastHit2D hit = Physics2D.Linecast(transform.position, h.collider.gameObject.transform.position);
+
+                if (hit.transform.tag != "Player")
+                {
+                    return;
+                }
+
                 if (playerLastPos == null || playerLastPos != h.collider.gameObject.transform.position)
                 {
                     playerLastPos = h.collider.gameObject.transform.position;
                     AimAtPlayer(h.collider.gameObject);
 
                 }
-                    if (canShoot)
+                if (canShoot)
                 {
                     canShoot = false;
 
