@@ -32,6 +32,9 @@ public class playerMovement : MonoBehaviour
 
     public float wallUpForce = 1f;
 
+    public bool canMove = true;
+    public float transportPipeMoveSpeed = 200f;
+
 
     private void Start()
     {
@@ -40,80 +43,84 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("left"))
+        if (canMove)
         {
-            rb.AddForce(Vector2.left * moveSpeed * Time.deltaTime);
-        }
-        else if (Input.GetKey("right"))
-        {
-            rb.AddForce(Vector2.right * moveSpeed * Time.deltaTime);
-        }
-        if (rb.velocity.x >maxSpeed)
-        {
-            rb.velocity = new Vector2(maxSpeed, rb.velocity.y);
-        }
-        
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 0.6f, mask);
-        RaycastHit2D hitright = Physics2D.Raycast(transform.position, Vector2.right, 0.6f, wallmask);
-        RaycastHit2D hitleft = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, wallmask);
-
-        if (hitright.rigidbody != null || hitleft.rigidbody != null)
-        {
-            touchingWall = true;
-            
-            
-            
-            if(hitright.rigidbody != null)
+            if (Input.GetKey("left"))
             {
-                walldirection = -1;
+                rb.AddForce(Vector2.left * moveSpeed * Time.deltaTime);
+            }
+            else if (Input.GetKey("right"))
+            {
+                rb.AddForce(Vector2.right * moveSpeed * Time.deltaTime);
+            }
+            if (rb.velocity.x > maxSpeed)
+            {
+                rb.velocity = new Vector2(maxSpeed, rb.velocity.y);
+            }
+
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 0.6f, mask);
+            RaycastHit2D hitright = Physics2D.Raycast(transform.position, Vector2.right, 0.6f, wallmask);
+            RaycastHit2D hitleft = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, wallmask);
+
+            if (hitright.rigidbody != null || hitleft.rigidbody != null)
+            {
+                touchingWall = true;
+
+
+
+                if (hitright.rigidbody != null)
+                {
+                    walldirection = -1;
+                }
+                else
+                {
+                    walldirection = 1;
+                }
+
+                if (touchingWall && !canWallJump)
+                {
+                    StartCoroutine("WallJumpTimer");
+                }
+
+
             }
             else
             {
-                walldirection = 1;
-            }
-
-            if (touchingWall && !canWallJump)
-            {
-                StartCoroutine("WallJumpTimer");
-            }
-
-            
-        }
-        else
-        {
-            touchingWall = false;
-            walldirection = 0;
-            canWallJump = false;
-        }
-
-        if (hit.rigidbody != null) {
-            grounded = true;
-        }
-        else
-        {
-            grounded = false;
-        }
-
-        if (Input.GetKeyDown("space"))
-        {
-            if (touchingWall&&canWallJump)
-            {
-
-                Vector2 jumpDir = new Vector2(1 * walldirection, wallUpForce);
-
-                rb.velocity = Vector2.zero;
-
-                rb.AddForce(jumpDir * wallJump);
-
+                touchingWall = false;
+                walldirection = 0;
                 canWallJump = false;
             }
 
-            else if (grounded)
-            
+            if (hit.rigidbody != null)
             {
-                rb.AddForce(Vector2.up * jump);
+                grounded = true;
+            }
+            else
+            {
+                grounded = false;
+            }
 
-               
+            if (Input.GetKeyDown("space"))
+            {
+                if (touchingWall && canWallJump)
+                {
+
+                    Vector2 jumpDir = new Vector2(1 * walldirection, wallUpForce);
+
+                    rb.velocity = Vector2.zero;
+
+                    rb.AddForce(jumpDir * wallJump);
+
+                    canWallJump = false;
+                }
+
+                else if (grounded)
+
+                {
+                    rb.AddForce(Vector2.up * jump);
+
+
+                }
             }
         }
 
@@ -129,5 +136,25 @@ public class playerMovement : MonoBehaviour
 
         canWallJump = true;
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 9)
+        {
+            TransportPipePiece tPP = collision.gameObject.GetComponent<TransportPipePiece>();
+            if (tPP.GetNextPipeDirection() == Vector2.zero)
+            {
+                canMove = true;
+                rb.gravityScale = 2;
+            }
+            else
+            {
+                canMove = false;
+                rb.gravityScale = 0;
+
+                rb.velocity = tPP.GetNextPipeDirection() * transportPipeMoveSpeed;
+            }
+        }
     }
 }
