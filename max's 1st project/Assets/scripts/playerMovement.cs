@@ -33,8 +33,10 @@ public class playerMovement : MonoBehaviour
     public float wallUpForce = 1f;
 
     public bool canMove = true;
+    
     public float transportPipeMoveSpeed = 200f;
 
+    public Animator animator;
 
     private void Start()
     {
@@ -48,10 +50,18 @@ public class playerMovement : MonoBehaviour
             if (Input.GetKey("left"))
             {
                 rb.AddForce(Vector2.left * moveSpeed * Time.deltaTime);
+                animator.SetBool("Moving", true);
+                GetComponent<SpriteRenderer>().flipX = true;
             }
             else if (Input.GetKey("right"))
             {
                 rb.AddForce(Vector2.right * moveSpeed * Time.deltaTime);
+                animator.SetBool("Moving", true);
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+            else if (Mathf.Abs(rb.velocity.x) < 0.1f)
+            {
+                animator.SetBool("Moving", false);
             }
             if (rb.velocity.x > maxSpeed)
             {
@@ -94,10 +104,16 @@ public class playerMovement : MonoBehaviour
             if (hit.rigidbody != null)
             {
                 grounded = true;
+                animator.SetBool("Jumping", false);
+                animator.SetBool("Falling", false);
             }
             else
             {
                 grounded = false;
+                if (rb.velocity.y < 0)
+                {
+                    animator.SetBool("Falling", true);
+                }
             }
 
             if (Input.GetKeyDown("space"))
@@ -117,6 +133,7 @@ public class playerMovement : MonoBehaviour
                 else if (grounded)
 
                 {
+                    animator.SetBool("Jumping", true);
                     rb.AddForce(Vector2.up * jump);
 
 
