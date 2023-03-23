@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TransportPipeEnableCollidersLate : MonoBehaviour
 {
-    private List<TransportPipePiece> pipesToDisable = new List<TransportPipePiece>();
+    public List<TransportPipePiece> pipesToDisable = new List<TransportPipePiece>();
 
     private void Start()
     {
