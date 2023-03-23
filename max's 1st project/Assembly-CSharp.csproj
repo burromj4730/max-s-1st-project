@@ -71,6 +71,8 @@
     <Compile Include="Assets\scripts\Kill_player.cs" />
     <Compile Include="Assets\scripts\MovingPlatform.cs" />
     <Compile Include="Assets\scripts\Key.cs" />
+    <Compile Include="Assets\scripts\DisableOtherColliderOnEnter.cs" />
+    <Compile Include="Assets\scripts\TransportPipeEnableCollidersLate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
