@@ -61,19 +61,21 @@
     <Compile Include="Assets\scripts\TransportPipeEnableCollidersLate.cs" />
     <Compile Include="Assets\scripts\Cannon.cs" />
     <Compile Include="Assets\scripts\TransportPipePiece.cs" />
+    <Compile Include="Assets\scripts\OrbJump.cs" />
     <Compile Include="Assets\scripts\CameraFollowPlayer.cs" />
     <Compile Include="Assets\scripts\LockeDoor.cs" />
     <Compile Include="Assets\scripts\PlayerKeys.cs" />
     <Compile Include="Assets\scripts\FireFireBall.cs" />
+    <Compile Include="Assets\scripts\TilemapWallInFrontOfPlayer.cs" />
     <Compile Include="Assets\scripts\playerMovement.cs" />
     <Compile Include="Assets\scripts\WallInfrontOfPlayer.cs" />
     <Compile Include="Assets\scripts\Crusher.cs" />
     <Compile Include="Assets\scripts\CheckPointManager.cs" />
     <Compile Include="Assets\scripts\CheckPoint.cs" />
+    <Compile Include="Assets\scripts\ScriptsByBen\ChaseRetreatEnemy.cs" />
     <Compile Include="Assets\scripts\Kill_player.cs" />
     <Compile Include="Assets\scripts\MovingPlatform.cs" />
     <Compile Include="Assets\scripts\Key.cs" />
-    <Compile Include="Assets\scripts\OrbJump.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
