@@ -38,6 +38,8 @@ public class playerMovement : MonoBehaviour
 
     public Animator animator;
 
+    private bool sleepTime;
+
     private void Start()
     {
         
@@ -140,7 +142,17 @@ public class playerMovement : MonoBehaviour
                 }
             }
         }
-
+        if (!Input.anyKey)
+        {
+            StartCoroutine(SleepTimer());
+            sleepTime = true;
+        }
+        else
+        {
+            StopCoroutine(SleepTimer());
+            sleepTime = false;
+            animator.SetBool("Sleeping",false);
+        }
     }
 
     private IEnumerator WallJumpTimer()
@@ -172,6 +184,14 @@ public class playerMovement : MonoBehaviour
 
                 rb.velocity = tPP.GetNextPipeDirection() * transportPipeMoveSpeed;
             }
+        }
+    }
+    IEnumerator SleepTimer()
+    {
+        yield return new WaitForSeconds(5);
+        if (sleepTime)
+        {
+            animator.SetBool("Sleeping", true);
         }
     }
 }

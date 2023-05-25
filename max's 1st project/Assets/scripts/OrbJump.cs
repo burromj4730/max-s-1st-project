@@ -16,7 +16,7 @@ public class OrbJump : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             Vector2 vel = collision.gameObject.GetComponent<Rigidbody2D>().velocity;
             vel.y = 0;
