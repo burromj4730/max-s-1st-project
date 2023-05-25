@@ -12,15 +12,11 @@ public class OrbJump : MonoBehaviour
 
     private Animator anim;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
+    public ParticleSystem hitParticles;
 
-       
-    }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Vector2 vel = collision.gameObject.GetComponent<Rigidbody2D>().velocity;
             vel.y = 0;
@@ -30,6 +26,8 @@ public class OrbJump : MonoBehaviour
 
             anim.SetBool("Animation Done", false);
             anim.SetBool("Hit", true);
+
+            hitParticles.Play();
         }
 
     }
