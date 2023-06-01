@@ -40,6 +40,8 @@ public class playerMovement : MonoBehaviour
 
     private bool sleepTime;
 
+    public AnimationClip wakeUp;
+
     private void Start()
     {
         
@@ -139,19 +141,22 @@ public class playerMovement : MonoBehaviour
                     rb.AddForce(Vector2.up * jump);
 
 
+
                 }
             }
         }
-        if (!Input.anyKey)
+        if (!Input.anyKey && !sleepTime && !(animator.GetBool("Sleeping") && animator.GetBool("Moving") && animator.GetBool("Falling") && animator.GetBool("Jumping") && animator.GetBool("WAKE UP")))
         {
             StartCoroutine(SleepTimer());
-            sleepTime = true;
+            Debug.Log("Timer is sterted");
         }
-        else
+        else if (Input.anyKey && (animator.GetBool("Sleeping") || sleepTime))
         {
             StopCoroutine(SleepTimer());
             sleepTime = false;
-            animator.SetBool("Sleeping",false);
+            animator.SetBool("Sleeping", false);
+            animator.SetBool("WAKE UP", true);
+            StartCoroutine(WakeUpTimer());
         }
     }
 
@@ -165,6 +170,7 @@ public class playerMovement : MonoBehaviour
 
         canWallJump = true;
 
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -188,10 +194,15 @@ public class playerMovement : MonoBehaviour
     }
     IEnumerator SleepTimer()
     {
+        sleepTime = true;
         yield return new WaitForSeconds(5);
-        if (sleepTime)
-        {
-            animator.SetBool("Sleeping", true);
-        }
+        Debug.Log("Animation Playing");
+        sleepTime = false;
+        animator.SetBool("Sleeping", true);
+    }
+    IEnumerator WakeUpTimer()
+    {
+        yield return new WaitForSeconds(wakeUp.length);
+        animator.SetBool("WAKE UP", false);
     }
 }
