@@ -42,12 +42,47 @@ public class playerMovement : MonoBehaviour
 
     public AnimationClip wakeUp;
 
+    public bool sleepTimerStarted;
+
+    public float AFKTime;
+
+    public bool lockMovement;
+
     private void Start()
     {
         
     }
     // Update is called once per frame
     void Update()
+    {
+        if (!lockMovement)
+        {
+            Movement();
+        }
+
+        if (!Input.anyKey||!Input.anyKeyDown && (!sleepTimerStarted && !sleepTime))
+        {
+            StartCoroutine("SleepTimer");
+            sleepTimerStarted = true;
+            Debug.Log("Timer is sterted");
+        }
+        if (Input.anyKey||Input.anyKeyDown)
+        {
+            StopCoroutine("SleepTimer");
+            sleepTimerStarted = false;
+            if (sleepTime)
+            {
+                sleepTime = false;
+                animator.SetBool("Sleeping", false);
+                animator.SetBool("WAKE UP", true);
+                grounded = false;
+                StartCoroutine(WakeUpTimer());
+            }
+        }
+       
+    }
+
+    private void Movement()
     {
         if (canMove)
         {
@@ -145,19 +180,6 @@ public class playerMovement : MonoBehaviour
                 }
             }
         }
-        if (!Input.anyKey && !sleepTime && !(animator.GetBool("Sleeping") && animator.GetBool("Moving") && animator.GetBool("Falling") && animator.GetBool("Jumping") && animator.GetBool("WAKE UP")))
-        {
-            StartCoroutine(SleepTimer());
-            Debug.Log("Timer is sterted");
-        }
-        else if (Input.anyKey && (animator.GetBool("Sleeping") || sleepTime))
-        {
-            StopCoroutine(SleepTimer());
-            sleepTime = false;
-            animator.SetBool("Sleeping", false);
-            animator.SetBool("WAKE UP", true);
-            StartCoroutine(WakeUpTimer());
-        }
     }
 
     private IEnumerator WallJumpTimer()
@@ -194,15 +216,18 @@ public class playerMovement : MonoBehaviour
     }
     IEnumerator SleepTimer()
     {
-        sleepTime = true;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(AFKTime);
         Debug.Log("Animation Playing");
-        sleepTime = false;
+        sleepTimerStarted = false;
+        sleepTime = true;
         animator.SetBool("Sleeping", true);
+        lockMovement = true;
     }
     IEnumerator WakeUpTimer()
     {
+        
         yield return new WaitForSeconds(wakeUp.length);
         animator.SetBool("WAKE UP", false);
+        lockMovement = false;
     }
 }
