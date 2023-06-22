@@ -48,6 +48,8 @@ public class playerMovement : MonoBehaviour
 
     public bool lockMovement;
 
+    public GameObject Zee;
+
     private void Start()
     {
         
@@ -69,6 +71,7 @@ public class playerMovement : MonoBehaviour
         if (Input.anyKey||Input.anyKeyDown)
         {
             StopCoroutine("SleepTimer");
+            StopCoroutine("ZTimer");
             sleepTimerStarted = false;
             if (sleepTime)
             {
@@ -221,13 +224,20 @@ public class playerMovement : MonoBehaviour
         sleepTimerStarted = false;
         sleepTime = true;
         animator.SetBool("Sleeping", true);
+        StartCoroutine("ZTimer");
         lockMovement = true;
     }
     IEnumerator WakeUpTimer()
     {
-        
+        Zee.SetActive(false);
         yield return new WaitForSeconds(wakeUp.length);
         animator.SetBool("WAKE UP", false);
         lockMovement = false;
+    }
+
+    IEnumerator ZTimer()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Zee.SetActive(true);
     }
 }
