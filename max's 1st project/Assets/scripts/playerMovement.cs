@@ -240,4 +240,8 @@ public class playerMovement : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         Zee.SetActive(true);
     }
+    public void FirePowerUp()
+    {
+
+    }
 }
