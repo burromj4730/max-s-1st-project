@@ -3096,6 +3096,7 @@ GameObject:
   - component: {fileID: 326959591}
   - component: {fileID: 326959590}
   - component: {fileID: 326959593}
+  - component: {fileID: 326959594}
   m_Layer: 0
   m_Name: PowerUp Capsule (fire)_0
   m_TagString: Untagged
@@ -3203,6 +3204,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &326959594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326959589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d50dd1b036d7b4db60d028f99001f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &327253804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36960,7 +36973,7 @@ MonoBehaviour:
   animator: {fileID: 1786810112}
   wakeUp: {fileID: 7400000, guid: e987987eb6537bd4ba833977dddf9170, type: 2}
   sleepTimerStarted: 0
-  AFKTime: 2
+  AFKTime: 60
   lockMovement: 0
   Zee: {fileID: 1999718838}
 --- !u!114 &1786810111

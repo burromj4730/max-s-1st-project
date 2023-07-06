@@ -242,6 +242,13 @@ public class playerMovement : MonoBehaviour
     }
     public void FirePowerUp()
     {
-
+        animator.SetLayerWeight(1, 1f);
+        animator.SetBool("PowerUp Fire", true);
+        StartCoroutine(FireTimer());
+    }
+    IEnumerator FireTimer()
+    {
+        yield return new WaitForSeconds(1f);
+        animator.SetBool("PowerUp Fire", false);
     }
 }
