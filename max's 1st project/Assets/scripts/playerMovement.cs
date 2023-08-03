@@ -244,11 +244,16 @@ public class playerMovement : MonoBehaviour
     {
         animator.SetLayerWeight(1, 1f);
         animator.SetBool("PowerUp Fire", true);
+        lockMovement = true;
+        rb.velocity = Vector2.zero;
+        rb.gravityScale = 0f;
         StartCoroutine(FireTimer());
     }
     IEnumerator FireTimer()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         animator.SetBool("PowerUp Fire", false);
+        lockMovement = false;
+        rb.gravityScale = 2f;
     }
 }

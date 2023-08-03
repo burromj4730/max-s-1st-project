@@ -8,5 +8,6 @@ public class PowerUpFire : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.gameObject.GetComponent<playerMovement>().FirePowerUp();
+        Destroy(this.gameObject);
     }
 }
