@@ -15,11 +15,11 @@ C:/Users/max/Documents/GitHub/max's-1st-project/max's 1st project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53191
+60649
 Successfully changed project path to: C:/Users/max/Documents/GitHub/max's-1st-project/max's 1st project
 C:/Users/max/Documents/GitHub/max's-1st-project/max's 1st project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 97.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 102.09 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.34f1 (9a4c9c70452b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008034 seconds.
+Registered in 0.011897 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 87.02 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 166.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.178 seconds
+- Completed reload, in  1.958 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1178ms)
-		BeginReloadAssembly (158ms)
+	ReloadAssembly (1959ms)
+		BeginReloadAssembly (191ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (886ms)
-			LoadAssemblies (156ms)
+		EndReloadAssembly (1614ms)
+			LoadAssemblies (188ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (261ms)
+			SetupTypeCache (260ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (361ms)
+			RebuildScriptCaches (265ms)
+			SetupLoadedEditorAssemblies (899ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (87ms)
-				BeforeProcessingInitializeOnLoad (42ms)
-				ProcessInitializeOnLoadAttributes (171ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (166ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (455ms)
+				ProcessInitializeOnLoadMethodAttributes (218ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012922 seconds.
+Registered in 0.014710 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.56 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 93.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.151 seconds
+- Completed reload, in  2.189 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2155ms)
-		BeginReloadAssembly (266ms)
+	ReloadAssembly (2191ms)
+		BeginReloadAssembly (308ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1784ms)
-			LoadAssemblies (219ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1769ms)
+			LoadAssemblies (234ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (537ms)
+			SetupTypeCache (476ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (112ms)
-			SetupLoadedEditorAssemblies (717ms)
+			RebuildScriptCaches (104ms)
+			SetupLoadedEditorAssemblies (774ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (83ms)
-				BeforeProcessingInitializeOnLoad (167ms)
-				ProcessInitializeOnLoadAttributes (392ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				RefreshPlugins (93ms)
+				BeforeProcessingInitializeOnLoad (178ms)
+				ProcessInitializeOnLoadAttributes (419ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2226 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 169.9 MB.
+System memory in use before: 169.8 MB.
 System memory in use after: 169.8 MB.
 
 Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2661.
-Total: 5.353500 ms (FindLiveObjects: 0.309900 ms CreateObjectMapping: 0.093800 ms MarkObjects: 4.725100 ms  DeleteObjects: 0.222700 ms)
+Total: 4.784200 ms (FindLiveObjects: 0.295300 ms CreateObjectMapping: 0.080900 ms MarkObjects: 4.107400 ms  DeleteObjects: 0.297900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,151 +131,143 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/level 1.unity
-  artifactKey: Guid(85c1af5b556cbc446aab641c3e3ce5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/level 1.unity using Guid(85c1af5b556cbc446aab641c3e3ce5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d9b2c4cca15333a6401cfecf3dc9396') in 0.025897 seconds 
+  path: Assets/sprites/Decoration Grass.png
+  artifactKey: Guid(fe4980fc4c9109c4a8cf2b5dae50db27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Decoration Grass.png using Guid(fe4980fc4c9109c4a8cf2b5dae50db27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09d9238d9e076e3303d949d26f4d689') in 0.230585 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.361590 seconds.
-  path: Assets/Scenes/level Something....unity
-  artifactKey: Guid(85c1af5b556cbc446aab641c3e3ce5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/level Something....unity using Guid(85c1af5b556cbc446aab641c3e3ce5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26dfdb3238ae1953b8cad1dbd567c8c3') in 0.035716 seconds 
+  Time since last request: 73.108124 seconds.
+  path: Assets/sprites/Decoration Grass.png
+  artifactKey: Guid(fe4980fc4c9109c4a8cf2b5dae50db27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Decoration Grass.png using Guid(fe4980fc4c9109c4a8cf2b5dae50db27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd29984fde74aecefe2b84a1e69caa7fb') in 0.037041 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.349590 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df75b7d1a31c5b4f73fd45661b403b04') in 0.026270 seconds 
+  Time since last request: 47.572251 seconds.
+  path: Assets/sprites/Decoration Grass.png
+  artifactKey: Guid(fe4980fc4c9109c4a8cf2b5dae50db27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Decoration Grass.png using Guid(fe4980fc4c9109c4a8cf2b5dae50db27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30899dd4c67d28f918cd5fed5f8fa81a') in 0.064787 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.162399 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.654 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1655ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1370ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (446ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (541ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (154ms)
+				ProcessInitializeOnLoadAttributes (339ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.6 MB.
+System memory in use after: 173.5 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2692.
+Total: 4.908600 ms (FindLiveObjects: 0.464600 ms CreateObjectMapping: 0.122200 ms MarkObjects: 4.125300 ms  DeleteObjects: 0.194700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.868041 seconds.
-  path: Assets/Scenes/World 1-Level 1.unity
-  artifactKey: Guid(78e6caf980f826a4ba45f8344f640fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/World 1-Level 1.unity using Guid(78e6caf980f826a4ba45f8344f640fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b83cae07893850d8a1e9204bd9544fd') in 0.029629 seconds 
+  Time since last request: 335.331789 seconds.
+  path: Assets/sprites/Short Grass.asset
+  artifactKey: Guid(1cbce9adf84502d45a2e15e2278ed33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Short Grass.asset using Guid(1cbce9adf84502d45a2e15e2278ed33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f012429ada1dfd4d3309ed3b8c5a33') in 0.050033 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007328 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.127 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2128ms)
+		BeginReloadAssembly (221ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (79ms)
+		EndReloadAssembly (1780ms)
+			LoadAssemblies (189ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (562ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (97ms)
+			SetupLoadedEditorAssemblies (747ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (242ms)
+				ProcessInitializeOnLoadAttributes (444ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2241 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.6 MB.
+System memory in use after: 173.6 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2695.
+Total: 5.904300 ms (FindLiveObjects: 0.264600 ms CreateObjectMapping: 0.076500 ms MarkObjects: 5.326300 ms  DeleteObjects: 0.235200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4958.621546 seconds.
-  path: Assets/sprites/Level 1 Ground Textures.png
-  artifactKey: Guid(3349f7e2d3717064ea7aee36242a2f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground Textures.png using Guid(3349f7e2d3717064ea7aee36242a2f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad94a82e314698388206c13ee6336b71') in 0.488983 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 91.651246 seconds.
-  path: Assets/sprites/Level 1 Ground Textures.png
-  artifactKey: Guid(3349f7e2d3717064ea7aee36242a2f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground Textures.png using Guid(3349f7e2d3717064ea7aee36242a2f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41a96ffae5ca6f4a3fb72cb29711bce') in 0.050665 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.217312 seconds.
-  path: Assets/sprites/Level 1 Ground Textures.png
-  artifactKey: Guid(3349f7e2d3717064ea7aee36242a2f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground Textures.png using Guid(3349f7e2d3717064ea7aee36242a2f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65616b281aba5f2a712d4c7e59aa76dd') in 0.052817 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.394508 seconds.
-  path: Assets/sprites/Level 1 Ground Textures.png
-  artifactKey: Guid(3349f7e2d3717064ea7aee36242a2f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground Textures.png using Guid(3349f7e2d3717064ea7aee36242a2f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3828a3fdb8a0aa2bc3273a18dcabc854') in 0.101770 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 168.399181 seconds.
-  path: Assets/sprites/Level 1 Ground-Grass.asset
-  artifactKey: Guid(7d75865f9a904774cabdff6f2bdb4dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground-Grass.asset using Guid(7d75865f9a904774cabdff6f2bdb4dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f63444928b840ad7d785fe263a80c9') in 0.064188 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 66.713060 seconds.
-  path: Assets/sprites/Level 1 Ground (grass end right).asset
-  artifactKey: Guid(5c87a232501282142b3c0518c5da9701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (grass end right).asset using Guid(5c87a232501282142b3c0518c5da9701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b66e2018276c73686b1f54059dea9ba4') in 0.034550 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.537113 seconds.
-  path: Assets/sprites/Level 1 Ground (grass end left).asset
-  artifactKey: Guid(52ec1cd5972df404b871a57a499b9798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (grass end left).asset using Guid(52ec1cd5972df404b871a57a499b9798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e21598c4ce8923312eef2f5f389d69b') in 0.036098 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.012792 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt).asset
-  artifactKey: Guid(16c9ba7b2d5ffb446b7a22844e6ea18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt).asset using Guid(16c9ba7b2d5ffb446b7a22844e6ea18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262897afbad3df69d9f23ecece94fb4f') in 0.037947 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 74.379809 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone top).asset
-  artifactKey: Guid(7be48390b7db31d4db15ebd39252ec14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone top).asset using Guid(7be48390b7db31d4db15ebd39252ec14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549fdf77e20289d5a1822e5e8f3def2b') in 0.036080 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44.500010 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone left).asset
-  artifactKey: Guid(dc417ee0fd9af9241b80817babc5d884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone left).asset using Guid(dc417ee0fd9af9241b80817babc5d884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '235e597d1eb9f32e45e7e2da8bb0a37d') in 0.034406 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.821209 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone right).asset
-  artifactKey: Guid(b80601043db457c4793ceb163658cc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone right).asset using Guid(b80601043db457c4793ceb163658cc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9facdd0df6d65646e7c2de472c0837de') in 0.039112 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.778605 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone bottom).asset
-  artifactKey: Guid(a8f9a476aca6ee945b7119ed3dad346f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone bottom).asset using Guid(a8f9a476aca6ee945b7119ed3dad346f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5356d64d8aeb8307ff88252dd7f7ac') in 0.033998 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.323610 seconds.
-  path: Assets/sprites/Level 1 Ground (stone).asset
-  artifactKey: Guid(2e55d7aad4eb7ab4699bf6ae0ca32238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (stone).asset using Guid(2e55d7aad4eb7ab4699bf6ae0ca32238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f29b67ae7ccc75693f9ad9394ddb49') in 0.035532 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 73.942772 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone top-left).asset
-  artifactKey: Guid(78f58cf01dcb8684e9347e902265433d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone top-left).asset using Guid(78f58cf01dcb8684e9347e902265433d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10406befc22efebfc9507db02b73a397') in 0.038143 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.664495 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone top-right).asset
-  artifactKey: Guid(e798996041592e44599fe49f83af9cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone top-right).asset using Guid(e798996041592e44599fe49f83af9cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20f3282128188e47e0dd053e1689e934') in 0.042992 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 65.567039 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone bottom left).asset
-  artifactKey: Guid(eed1d3723a97466488d6a44e6d6a39d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone bottom left).asset using Guid(eed1d3723a97466488d6a44e6d6a39d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c18f58626760cf4e712ae9c84cfd95c') in 0.039622 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.036905 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone bottom right).asset
-  artifactKey: Guid(3d730baee1a1d794db086539db2dd244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone bottom right).asset using Guid(3d730baee1a1d794db086539db2dd244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb2f631cc83fdde9b8446abbdb520d6') in 0.037710 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 55.126865 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone inner-top-left).asset
-  artifactKey: Guid(d84e00d12894edf4ba5383a56e0bb827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone inner-top-left).asset using Guid(d84e00d12894edf4ba5383a56e0bb827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d8b06340b6e65e82fcf4b87d6485cb') in 0.039300 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 56.830988 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone inner-top-right).asset
-  artifactKey: Guid(74d3284b723c9cb45ab38d5ab5e531c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone inner-top-right).asset using Guid(74d3284b723c9cb45ab38d5ab5e531c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b28c5036fb6ad9ea4ba2947d308f165c') in 0.048266 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.569458 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone inner-bottom-left).asset
-  artifactKey: Guid(6f390f584220ed44281b558af1a9d330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone inner-bottom-left).asset using Guid(6f390f584220ed44281b558af1a9d330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2edfde530ad84caa8b787cba41a6b5') in 0.033242 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.535199 seconds.
-  path: Assets/sprites/Level 1 Ground (dirt to stone inner-bottom-right).asset
-  artifactKey: Guid(c35fc5867a268c24a86b854140484687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sprites/Level 1 Ground (dirt to stone inner-bottom-right).asset using Guid(c35fc5867a268c24a86b854140484687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0fa4fa734a6a4c9a99cbd8be8451764') in 0.035864 seconds 
+  Time since last request: 161.687672 seconds.
+  path: Assets/sprites/Short Grass.asset
+  artifactKey: Guid(1cbce9adf84502d45a2e15e2278ed33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Short Grass.asset using Guid(1cbce9adf84502d45a2e15e2278ed33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509e575caf95581e7cb2d415dc9918b8') in 0.030405 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
