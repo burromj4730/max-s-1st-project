@@ -109,7 +109,10 @@ public class playerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2(maxSpeed, rb.velocity.y);
             }
-
+            else if (rb.velocity.x < -maxSpeed)
+            {
+                rb.velocity = new Vector2(-maxSpeed, rb.velocity.y);
+            }
             RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 0.6f, mask);
             RaycastHit2D hitright = Physics2D.Raycast(transform.position, Vector2.right, 0.6f, wallmask);
             RaycastHit2D hitleft = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, wallmask);

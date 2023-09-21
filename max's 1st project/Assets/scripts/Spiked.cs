@@ -1,12 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Spiked : MonoBehaviour
 {
     public Sprite spiked;
 
     public GameObject deathParticals;
+
+    public GameObject camera;
+
+    public float shakeAmount;
+
+    public float shakeDuration;
+
+    bool shakeWhenDed;
+
+    Vector3 originalPosition;
+
+    private void Start()
+    {
+        
+    }
+
+    private void Update()
+    {
+        if (shakeWhenDed)
+        {
+            if (shakeDuration > 0)
+            {
+                camera.transform.localPosition = originalPosition + Random.insideUnitSphere * shakeAmount;
+                shakeDuration -= Time.deltaTime;
+            }
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
@@ -16,6 +43,7 @@ public class Spiked : MonoBehaviour
             collision.gameObject.GetComponent<SpriteRenderer>().sprite = spiked;
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-2, 2), 15) * 50f);
             StartCoroutine(ExplodePlayer(collision.gameObject));
+            StartCoroutine(reloadScene());
         }
     }
     IEnumerator ExplodePlayer(GameObject player)
@@ -27,6 +55,9 @@ public class Spiked : MonoBehaviour
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         Instantiate(deathParticals, player.transform);
         StartCoroutine(TurnOfSprite(player));
+        yield return new WaitForSeconds(0.1f);
+        originalPosition = camera.transform.localPosition;
+        shakeWhenDed = true;
     }
     IEnumerator TurnOfSprite(GameObject player)
     {
@@ -45,9 +76,10 @@ public class Spiked : MonoBehaviour
             StartCoroutine(fadeToWhite(player));
         }
     }
-    IEnumerable screenShake(GameObject player)
+    IEnumerator reloadScene()
     {
-        yield return new 
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
 
