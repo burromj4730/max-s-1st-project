@@ -24,6 +24,8 @@ public class MagmaWanderer : MonoBehaviour
 
     public Animator magmaWanderer;
 
+    private bool canMove = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,10 +40,16 @@ public class MagmaWanderer : MonoBehaviour
         if(circle.collider != null)
         {
             agro = true;
+            magmaWanderer.SetBool("Attack", true);
         }
         else
         {
             agro = false;
+            magmaWanderer.SetBool("Attack", false);
+            if (direction == -1)
+            {
+                magmaWanderer.Play("Magma Wander", 0, 1);
+            }
         }
 
         if (!agro)
@@ -54,45 +62,46 @@ public class MagmaWanderer : MonoBehaviour
             Agro(circle.collider.gameObject);
             moveSpeed = agroSpeed;
         }
-        RB.velocity = new Vector2(direction * moveSpeed, 0);
+        if (canMove)
+        {
+            RB.velocity = new Vector2(direction * moveSpeed, 0);
+        }
+        else
+        {
+            RB.velocity = Vector2.zero;
+        }
+
     }
     private void Wander()
     {
         RaycastHit2D hitleft = Physics2D.Raycast(transform.position - new Vector3(0.5f, 0), -Vector2.up, 0.6f, mask);
         RaycastHit2D hitright = Physics2D.Raycast(transform.position + new Vector3(0.5f, 0), -Vector2.up, 0.6f, mask);
-        if (hitleft.collider == null)
+        if (hitleft.collider == null && direction == -1)
         {
             direction = 1;
+            magmaWanderer.SetBool("Turn Left", false);
             magmaWanderer.SetBool("Turn Right", true);
-            StartCoroutine(WaitForAnimation("Turn Right", true));
+            StartCoroutine(WaitForAnimation());
         }
-        if (hitright.collider == null)
+        if (hitright.collider == null && direction == 1)
         {
             direction = -1;
+            magmaWanderer.SetBool("Turn Right", false);
             magmaWanderer.SetBool("Turn Left", true);
-            StartCoroutine(WaitForAnimation("Turn Left", false));
+            StartCoroutine(WaitForAnimation());
         }
         
     }
 
     private void Agro(GameObject Player)
     {
-        if (Player.transform.position.x < transform.position.x)
-        {
-            direction = -1;
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
-        else
-        {
-            direction = 1;
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
+       
     }
 
-    IEnumerator WaitForAnimation(string BoolName, bool flip)
+    IEnumerator WaitForAnimation()
     {
+        canMove = false;
         yield return new WaitForSeconds(0.3f);
-        magmaWanderer.SetBool(BoolName, false);
-        GetComponent<SpriteRenderer>().flipX = flip;
+        canMove = true;
     }
 }
