@@ -26,6 +26,8 @@ public class MagmaWanderer : MonoBehaviour
 
     private bool canMove = true;
 
+    public GameObject particles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,11 +43,13 @@ public class MagmaWanderer : MonoBehaviour
         {
             agro = true;
             magmaWanderer.SetBool("Attack", true);
+            particles.SetActive(true);
         }
         else
         {
             agro = false;
             magmaWanderer.SetBool("Attack", false);
+            particles.SetActive(false);
             if (direction == -1)
             {
                 magmaWanderer.Play("Magma Wander", 0, 1);
@@ -82,6 +86,7 @@ public class MagmaWanderer : MonoBehaviour
             magmaWanderer.SetBool("Turn Left", false);
             magmaWanderer.SetBool("Turn Right", true);
             StartCoroutine(WaitForAnimation());
+            particles.transform.rotation = Quaternion.Euler(-110, 90, -90);
         }
         if (hitright.collider == null && direction == 1)
         {
@@ -89,6 +94,7 @@ public class MagmaWanderer : MonoBehaviour
             magmaWanderer.SetBool("Turn Right", false);
             magmaWanderer.SetBool("Turn Left", true);
             StartCoroutine(WaitForAnimation());
+            particles.transform.rotation = Quaternion.Euler(-70, 90, -90);
         }
         
     }
