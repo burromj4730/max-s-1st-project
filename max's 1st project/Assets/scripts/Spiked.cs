@@ -46,7 +46,7 @@ public class Spiked : MonoBehaviour
             StartCoroutine(reloadScene());
         }
     }
-    IEnumerator ExplodePlayer(GameObject player)
+    public IEnumerator ExplodePlayer(GameObject player)
     {
         yield return new WaitForSeconds(0.25f);
         StartCoroutine(fadeToWhite(player));
@@ -76,7 +76,7 @@ public class Spiked : MonoBehaviour
             StartCoroutine(fadeToWhite(player));
         }
     }
-    IEnumerator reloadScene()
+    public IEnumerator reloadScene()
     {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

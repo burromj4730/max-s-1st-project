@@ -219,6 +219,14 @@ public class playerMovement : MonoBehaviour
                 rb.velocity = tPP.GetNextPipeDirection() * transportPipeMoveSpeed;
             }
         }
+        else if (collision.gameObject.layer == 3)
+        {
+            animator.SetBool("Falling (to our death)", true);
+            transform.GetChild(0).transform.parent = null;
+            Spiked s = FindObjectOfType<Spiked>();
+            s.StartCoroutine(s.ExplodePlayer(this.gameObject));
+            s.StartCoroutine(s.reloadScene());
+        }
     }
     IEnumerator SleepTimer()
     {
