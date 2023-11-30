@@ -78,9 +78,11 @@ public class MagmaWanderer : MonoBehaviour
     }
     private void Wander()
     {
-        RaycastHit2D hitleft = Physics2D.Raycast(transform.position - new Vector3(0.5f, 0), -Vector2.up, 0.6f, mask);
-        RaycastHit2D hitright = Physics2D.Raycast(transform.position + new Vector3(0.5f, 0), -Vector2.up, 0.6f, mask);
-        if (hitleft.collider == null && direction == -1)
+        RaycastHit2D hitleftDown = Physics2D.Raycast(transform.position - new Vector3(0.5f, 0), -Vector2.up, 0.6f, mask);
+        RaycastHit2D hitrightDown = Physics2D.Raycast(transform.position + new Vector3(0.5f, 0), -Vector2.up, 0.6f, mask);
+        RaycastHit2D hitleft = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, mask);
+        RaycastHit2D hitright = Physics2D.Raycast(transform.position, Vector2.right, 0.6f, mask);
+        if ((hitleftDown.collider == null && direction == -1) || (hitleft.collider != null && direction == -1))
         {
             direction = 1;
             magmaWanderer.SetBool("Turn Left", false);
@@ -88,7 +90,7 @@ public class MagmaWanderer : MonoBehaviour
             StartCoroutine(WaitForAnimation());
             particles.transform.rotation = Quaternion.Euler(-110, 90, -90);
         }
-        if (hitright.collider == null && direction == 1)
+        if ((hitrightDown.collider == null && direction == 1) || (hitright.collider != null && direction == 1))
         {
             direction = -1;
             magmaWanderer.SetBool("Turn Right", false);
