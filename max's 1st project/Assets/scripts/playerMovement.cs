@@ -82,7 +82,16 @@ public class playerMovement : MonoBehaviour
                 StartCoroutine(WakeUpTimer());
             }
         }
-       
+        int dir = GetComponent<SpriteRenderer>().flipX ? -1 : 1;
+        RaycastHit2D edgeCheck = Physics2D.Raycast(transform.position + (new Vector3(0.3f, 0) * dir), -Vector2.up, 0.6f, mask);
+        if (edgeCheck.rigidbody == null)
+        {
+            animator.SetBool("Looking over Edge", true);
+        }
+        else
+        {
+            animator.SetBool("Looking over Edge", false);
+        }
     }
 
     private void Movement()
