@@ -5062,6 +5062,8 @@ MonoBehaviour:
   AFKTime: 60
   lockMovement: 0
   Zee: {fileID: 5987309381291310776}
+  sleepTimer: 0
+  idleAnimCount: 0
 --- !u!114 &5987309381783042545
 MonoBehaviour:
   m_ObjectHideFlags: 0

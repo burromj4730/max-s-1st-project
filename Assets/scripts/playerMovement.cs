@@ -56,6 +56,8 @@ public class playerMovement : MonoBehaviour
 
     public float sleepTimer;
 
+    public int idleAnimCount;
+
     private void Start()
     {
         
@@ -68,13 +70,12 @@ public class playerMovement : MonoBehaviour
             Movement();
         }
 
-        if (!Input.anyKey||!Input.anyKeyDown && (!sleepTimerStarted && !sleepTime))
+        if (!Input.anyKey && !Input.anyKeyDown && !sleepTimerStarted && !sleepTime && !idleTimerStarted)
         {
             StartCoroutine("SleepTimer");
             StartCoroutine("IdleTimer");
             idleTimerStarted = true;
             sleepTimerStarted = true;
-            Debug.Log("Timer is sterted");
         }
         if (Input.anyKey||Input.anyKeyDown)
         {
@@ -93,8 +94,11 @@ public class playerMovement : MonoBehaviour
             }
             else if (idleTime)
             {
+                for (int i = 1; i <= idleAnimCount; i++)
+                {
+                    animator.SetBool("Idle" + i.ToString(), false);
+                }
                 idleTime = false;
-                animator.SetBool("Idle", false);
             }
         }
         int dir = GetComponent<SpriteRenderer>().flipX ? -1 : 1;
@@ -118,12 +122,24 @@ public class playerMovement : MonoBehaviour
                 rb.AddForce(Vector2.left * moveSpeed * Time.deltaTime);
                 animator.SetBool("Moving", true);
                 GetComponent<SpriteRenderer>().flipX = true;
+
+                for (int i = 1; i <= idleAnimCount; i++)
+                {
+                    animator.SetBool("Idle" + i.ToString(), false);
+                }
+                idleTime = false;
             }
             else if (Input.GetKey("right"))
             {
                 rb.AddForce(Vector2.right * moveSpeed * Time.deltaTime);
                 animator.SetBool("Moving", true);
                 GetComponent<SpriteRenderer>().flipX = false;
+
+                for (int i = 1; i <= idleAnimCount; i++)
+                {
+                    animator.SetBool("Idle" + i.ToString(), false);
+                }
+                idleTime = false;
             }
             else if (Mathf.Abs(rb.velocity.x) < 0.1f)
             {
@@ -255,7 +271,6 @@ public class playerMovement : MonoBehaviour
     IEnumerator SleepTimer()
     {
         yield return new WaitForSeconds(sleepTimer);
-        Debug.Log("Animation Playing");
         sleepTimerStarted = false;
         sleepTime = true;
         animator.SetBool("Sleeping", true);
@@ -265,12 +280,24 @@ public class playerMovement : MonoBehaviour
 
     IEnumerator IdleTimer()
     {
+        Debug.Log("IdleTimerTriggered");
         yield return new WaitForSeconds(AFKTime);
         idleTimerStarted = false;
         idleTime = true;
-        animator.SetBool("Idle", true);
+        int random = Random.Range(1, idleAnimCount + 1);
+        animator.SetBool("Idle"+random.ToString(), true);
+        StartCoroutine("TurnOffCurrentIdle");
     }
 
+    IEnumerator TurnOffCurrentIdle()
+    {
+        yield return new WaitForSeconds(5f);
+        for (int i = 1; i <= idleAnimCount; i++)
+        {
+            animator.SetBool("Idle" + i.ToString(), false);
+        }
+        idleTime = false;
+    }
     IEnumerator WakeUpTimer()
     {
         Zee.SetActive(false);

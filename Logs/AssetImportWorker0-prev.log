@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/max/Documents/GitHub/max's-1st-project/max's 1st project
+C:/Users/max/Documents/GitHub/max's-1st-project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61423
-Successfully changed project path to: C:/Users/max/Documents/GitHub/max's-1st-project/max's 1st project
-C:/Users/max/Documents/GitHub/max's-1st-project/max's 1st project
+52377
+Successfully changed project path to: C:/Users/max/Documents/GitHub/max's-1st-project
+C:/Users/max/Documents/GitHub/max's-1st-project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 101.85 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 142.10 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.34f1 (9a4c9c70452b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/max/Documents/GitHub/max's-1st-project/max's 1st project/Assets
+[Subsystems] Discovering subsystems at path C:/Users/max/Documents/GitHub/max's-1st-project/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,42 +35,1026 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.164480 seconds.
+Registered in 0.013330 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 89.26 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 82.91 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  9.125 seconds
+- Completed reload, in  1.692 seconds
 Domain Reload Profiling:
-	ReloadAssembly (9126ms)
-		BeginReloadAssembly (7529ms)
+	ReloadAssembly (1692ms)
+		BeginReloadAssembly (293ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (4ms)
-		EndReloadAssembly (1041ms)
-			LoadAssemblies (7522ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (427ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (1189ms)
+			LoadAssemblies (278ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (404ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (345ms)
+			RebuildScriptCaches (93ms)
+			SetupLoadedEditorAssemblies (450ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (89ms)
-				BeforeProcessingInitializeOnLoad (31ms)
-				ProcessInitializeOnLoadAttributes (151ms)
-				ProcessInitializeOnLoadMethodAttributes (62ms)
+				RefreshPlugins (83ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (244ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.945479 seconds.
+Registered in 0.011600 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.611 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2616ms)
+		BeginReloadAssembly (376ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (2088ms)
+			LoadAssemblies (253ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (655ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (124ms)
+			SetupLoadedEditorAssemblies (819ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (244ms)
+				ProcessInitializeOnLoadAttributes (516ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1537 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.2 MB.
+System memory in use after: 143.3 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1980.
+Total: 5.353700 ms (FindLiveObjects: 0.237900 ms CreateObjectMapping: 0.064100 ms MarkObjects: 4.906100 ms  DeleteObjects: 0.143400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/sprites/Wall-Jump Piller Right End (bottom).asset
+  artifactKey: Guid(b2e582859d7d1054eae48099e542e127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-Jump Piller Right End (bottom).asset using Guid(b2e582859d7d1054eae48099e542e127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c609b1a7c9af64daecb37dd8c9d3fbab') in 0.303279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008032 seconds.
+  path: Assets/sprites/Wall-jump Texture (1).png
+  artifactKey: Guid(67116349aaffb2645ad40ecbc16c6deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Texture (1).png using Guid(67116349aaffb2645ad40ecbc16c6deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b4552c38e693778b5e0143e78bb6ad7') in 0.287993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000624 seconds.
+  path: Assets/sprites/CheckPoint.png
+  artifactKey: Guid(8967e9f2a09c7c943aa27c9c89af77f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/CheckPoint.png using Guid(8967e9f2a09c7c943aa27c9c89af77f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4127e2549645ff7a976ad976b397259') in 0.123480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/sprites/Max is DED1.png
+  artifactKey: Guid(c06646f3c483b214785f4c813829da3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max is DED1.png using Guid(c06646f3c483b214785f4c813829da3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f1c4e672a09427b5e2bd0ee2d4dce2') in 0.094862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000489 seconds.
+  path: Assets/sprites/Ground Atlas.spriteatlas
+  artifactKey: Guid(6e4768deeeef5fc4aabc22bfa2bd027f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Atlas.spriteatlas using Guid(6e4768deeeef5fc4aabc22bfa2bd027f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff69896514b2e987a8fb94ea0bb61de') in 0.050581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/sprites/Jump Orb (hit).png
+  artifactKey: Guid(e92dc46871324a64f8359fa27ad2e235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Jump Orb (hit).png using Guid(e92dc46871324a64f8359fa27ad2e235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b3709a4dc70b2f729a01dcdb49ca76') in 0.144191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003207 seconds.
+  path: Assets/sprites/Level 1 Ground (grass end right).asset
+  artifactKey: Guid(5c87a232501282142b3c0518c5da9701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (grass end right).asset using Guid(5c87a232501282142b3c0518c5da9701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b66e2018276c73686b1f54059dea9ba4') in 0.091721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002596 seconds.
+  path: Assets/sprites/Max Fall-Moving.png
+  artifactKey: Guid(515558aff6322964781f16d4bae92644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Fall-Moving.png using Guid(515558aff6322964781f16d4bae92644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86266cabf0afdd740794a31ef15ba3d3') in 0.098921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000473 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone left).asset
+  artifactKey: Guid(dc417ee0fd9af9241b80817babc5d884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone left).asset using Guid(dc417ee0fd9af9241b80817babc5d884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '235e597d1eb9f32e45e7e2da8bb0a37d') in 0.098842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000599 seconds.
+  path: Assets/sprites/Max waving at player.png
+  artifactKey: Guid(18448bbe91176ed40987475cffcf032c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max waving at player.png using Guid(18448bbe91176ed40987475cffcf032c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fd8887b248317bdc78a820f9eadbd59') in 0.207568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/sprites/Ground T Intersection (left).asset
+  artifactKey: Guid(0d059301286180e4eb12027f9c73b09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground T Intersection (left).asset using Guid(0d059301286180e4eb12027f9c73b09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff1c1f5392e1433fc5de9a630d9c9fa9') in 0.096719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/sprites/Wall-jump (left) Texture_2.asset
+  artifactKey: Guid(0c17389b5019e8f4185fcdd61b792846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump (left) Texture_2.asset using Guid(0c17389b5019e8f4185fcdd61b792846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c16cf5b6244ccc2bf8f829678060045') in 0.100760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/sprites/Wall-jump Bottom corner (left) Texture_9.asset
+  artifactKey: Guid(74a329380f0dbd649b92b96561ccce9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Bottom corner (left) Texture_9.asset using Guid(74a329380f0dbd649b92b96561ccce9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2928621afe3a1811e0a94cfab45b5820') in 0.098004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/sprites/Wall-jump Bottom Corner (right) Texture_4.asset
+  artifactKey: Guid(13bcb265d8ea11f4a85d6984d8ac7245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Bottom Corner (right) Texture_4.asset using Guid(13bcb265d8ea11f4a85d6984d8ac7245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d55233ad5494ff00640deb90cec221b') in 0.100279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/sprites/More Wall-Jump.png
+  artifactKey: Guid(c54bd5d427fa93c46ba8c593d069740f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/More Wall-Jump.png using Guid(c54bd5d427fa93c46ba8c593d069740f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bddbf074aed257168bcf30724033c90') in 0.225371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/sprites/Ground Piller End (up).asset
+  artifactKey: Guid(b2b2e823f261d39479fb0e324e054ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller End (up).asset using Guid(b2b2e823f261d39479fb0e324e054ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0272569b5a50af18b3402e89f71be206') in 0.108408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.011590 seconds.
+  path: Assets/sprites/Level 1 Ground (grass end left).asset
+  artifactKey: Guid(52ec1cd5972df404b871a57a499b9798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (grass end left).asset using Guid(52ec1cd5972df404b871a57a499b9798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e21598c4ce8923312eef2f5f389d69b') in 0.086555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000567 seconds.
+  path: Assets/sprites/TransportPipeStraight.png
+  artifactKey: Guid(af81251c7c281f6419e19de335ec3adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/TransportPipeStraight.png using Guid(af81251c7c281f6419e19de335ec3adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f6edb4751f12e35060a23c1072a7cd') in 0.415712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000492 seconds.
+  path: Assets/sprites/Short Grass.asset
+  artifactKey: Guid(1cbce9adf84502d45a2e15e2278ed33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Short Grass.asset using Guid(1cbce9adf84502d45a2e15e2278ed33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509e575caf95581e7cb2d415dc9918b8') in 0.029222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/sprites/TransportPipeStraightWindow.png
+  artifactKey: Guid(6903ec7203964b24e8487a981b35eb4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/TransportPipeStraightWindow.png using Guid(6903ec7203964b24e8487a981b35eb4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1294c568566c264470af7ecd3e03f507') in 0.323102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000597 seconds.
+  path: Assets/sprites/Key.png
+  artifactKey: Guid(633f44382bdf92c4b8c8fba085064848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Key.png using Guid(633f44382bdf92c4b8c8fba085064848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8708fdc5197f7cd19e3d6355282b1525') in 0.124864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/sprites/Max Moving (1).png
+  artifactKey: Guid(df3e66a9cf1962d41b4d21dcdee566a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Moving (1).png using Guid(df3e66a9cf1962d41b4d21dcdee566a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a34d1acc70191a591ddc9fff8bdb95') in 0.196110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004744 seconds.
+  path: Assets/sprites/Ground Cross Intersection.asset
+  artifactKey: Guid(1178eee0682968743bc89f5f5f3703ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Cross Intersection.asset using Guid(1178eee0682968743bc89f5f5f3703ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a0472a08fc473be314086566e8408b7') in 0.223976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Assets/sprites/Ground Piller Intersection (rightside left).asset
+  artifactKey: Guid(e064c92f14e772647aca87c8ad68ef81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller Intersection (rightside left).asset using Guid(e064c92f14e772647aca87c8ad68ef81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5343b6e5cdf625315bfb9f2d8ffc5be4') in 0.087191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/sprites/Ground Piller Intersection (leftside up).asset
+  artifactKey: Guid(1112ac00d9f3da54db488ca20b90ff38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller Intersection (leftside up).asset using Guid(1112ac00d9f3da54db488ca20b90ff38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389f79f97aeafc4a0238bba9a867df11') in 0.071836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/sprites/Ground Ceiling Inner Corner (right).asset
+  artifactKey: Guid(1de0b0cbee6c1c64c8d48dd42b3db8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Ceiling Inner Corner (right).asset using Guid(1de0b0cbee6c1c64c8d48dd42b3db8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '228df22bf0d0fa76e7d0880af8c7e602') in 0.145948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000482 seconds.
+  path: Assets/sprites/Ground Piller Intersection (rightside up).asset
+  artifactKey: Guid(3446128b762d10c4fa911f6756804161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller Intersection (rightside up).asset using Guid(3446128b762d10c4fa911f6756804161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03d0e42542ec7a1b904546225f449fac') in 0.108804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/sprites/TransportPipeTurn (1).png
+  artifactKey: Guid(d812506a5938b2a40945b23f201f7dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/TransportPipeTurn (1).png using Guid(d812506a5938b2a40945b23f201f7dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e6b5d02444dbccfc44c4eeefd94662') in 0.130268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
+  path: Assets/sprites/Magma Wandere Attacking (left).png
+  artifactKey: Guid(e97b284d016d92442bf84fe3e033b1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Magma Wandere Attacking (left).png using Guid(e97b284d016d92442bf84fe3e033b1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be579f5c16267e6bda5d5df6a984c08d') in 0.107143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/sprites/PipeEnd.png
+  artifactKey: Guid(bcf164455f854744d826e37f448da099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/PipeEnd.png using Guid(bcf164455f854744d826e37f448da099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34dcc59a163ad4daa8741ef5394f5251') in 0.117647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000611 seconds.
+  path: Assets/sprites/W1 Ground Spikes.png
+  artifactKey: Guid(fc5031fdc27a3684f99a04c3c453a506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/W1 Ground Spikes.png using Guid(fc5031fdc27a3684f99a04c3c453a506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745ed5244815530c95b81962bafe8fbe') in 0.119837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Assets/sprites/Ground Texture.png
+  artifactKey: Guid(39f506ef610eca94d9709fa25176dd55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Texture.png using Guid(39f506ef610eca94d9709fa25176dd55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b579f56dc27ec399e58ddf847286efd8') in 0.179317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/sprites/Max Looking over Edge.png
+  artifactKey: Guid(eb6e0751c32b2644db9ad02c7a5e9211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Looking over Edge.png using Guid(eb6e0751c32b2644db9ad02c7a5e9211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2425003da1fd9f521ea2f6252cde180') in 0.117443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000473 seconds.
+  path: Assets/sprites/Wall-Jump Piller Left End (bottom).asset
+  artifactKey: Guid(2e4bf67b15d00b346bec91dd0e2d5ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-Jump Piller Left End (bottom).asset using Guid(2e4bf67b15d00b346bec91dd0e2d5ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d2ed551025f7e49f1a57f08566c307') in 0.079168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001207 seconds.
+  path: Assets/sprites/Ground Base Inner Corner (right).asset
+  artifactKey: Guid(ce0d2120bdab7e145b33e47c1101c0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Base Inner Corner (right).asset using Guid(ce0d2120bdab7e145b33e47c1101c0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103854f3f482d3bc99c67f9f2cff9592') in 0.086150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000535 seconds.
+  path: Assets/sprites/Wall-jump (left) Texture_7.asset
+  artifactKey: Guid(50f18190b758faa428ceddaef96d5c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump (left) Texture_7.asset using Guid(50f18190b758faa428ceddaef96d5c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0f6f904fa3acf98cfe6e6afd1355f0') in 0.118895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/sprites/Level 1 Ground Textures.png
+  artifactKey: Guid(3349f7e2d3717064ea7aee36242a2f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground Textures.png using Guid(3349f7e2d3717064ea7aee36242a2f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '938030c5aabfb3e0b3b732f780c4f7ff') in 0.239835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/sprites/Crusher (1).png
+  artifactKey: Guid(d761fc96f2de51a4e8a380f71f7fba72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Crusher (1).png using Guid(d761fc96f2de51a4e8a380f71f7fba72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c45df5cbc9f1ee84c5e48ba1ca58ff22') in 0.102925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008449 seconds.
+  path: Assets/sprites/Ground Texture 2.png
+  artifactKey: Guid(9ba948d110ffb2d4795571275871ae3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Texture 2.png using Guid(9ba948d110ffb2d4795571275871ae3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab2767d762ca5f7c069d1a9a5d9d9f45') in 0.212615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/sprites/Magma Wandere Attacking (right).png
+  artifactKey: Guid(ea6185f877c0d974bb3b9a29d37610ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Magma Wandere Attacking (right).png using Guid(ea6185f877c0d974bb3b9a29d37610ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a100574011af2a9663fa49c7076480ad') in 0.123994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000630 seconds.
+  path: Assets/sprites/Level 3.prefab
+  artifactKey: Guid(10383febc0cb89e44ab79d2f7f23f208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 3.prefab using Guid(10383febc0cb89e44ab79d2f7f23f208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1278133333e9cdc16cda7ed0d38e20d') in 0.327047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/sprites/Level 1 Ground-Grass.asset
+  artifactKey: Guid(7d75865f9a904774cabdff6f2bdb4dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground-Grass.asset using Guid(7d75865f9a904774cabdff6f2bdb4dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f63444928b840ad7d785fe263a80c9') in 0.149244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000525 seconds.
+  path: Assets/sprites/Ground Piller Straight (leftright).asset
+  artifactKey: Guid(6d38164c14765cc4483e6d524f19bab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller Straight (leftright).asset using Guid(6d38164c14765cc4483e6d524f19bab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf83e71e112cabf62a0d4349f9c29d4a') in 0.101411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/sprites/Wall-jump Top Corner (left) Texture_5.asset
+  artifactKey: Guid(197a90505f973dc45a0143ba80fc7f14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Top Corner (left) Texture_5.asset using Guid(197a90505f973dc45a0143ba80fc7f14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10e15129356d4000f20ea88ae4e359c') in 0.110945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/sprites/Transport Pipe Entrance.png
+  artifactKey: Guid(c89e07ed383274d459b9212aadd8554d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Transport Pipe Entrance.png using Guid(c89e07ed383274d459b9212aadd8554d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a547f7998fd4b89c6e805256c4896b33') in 0.107143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/sprites/KeyHole.png
+  artifactKey: Guid(9d2dd38af5a99bf4793f3098e4e897d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/KeyHole.png using Guid(9d2dd38af5a99bf4793f3098e4e897d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c225b75d57311cc9811c9d02fe633d7') in 0.101611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000536 seconds.
+  path: Assets/sprites/Gear (2).png
+  artifactKey: Guid(03012c1b70ee8d340afc18828cc91f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Gear (2).png using Guid(03012c1b70ee8d340afc18828cc91f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd605abc526d3ac49cc16c619d8421228') in 0.087134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt).asset
+  artifactKey: Guid(16c9ba7b2d5ffb446b7a22844e6ea18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt).asset using Guid(16c9ba7b2d5ffb446b7a22844e6ea18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262897afbad3df69d9f23ecece94fb4f') in 0.083882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/sprites/Saw.png
+  artifactKey: Guid(c0760043b039641409a024a83ce8df4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Saw.png using Guid(c0760043b039641409a024a83ce8df4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0be5ea14425882e27e45059b6f8bd94') in 0.115940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/sprites/Wall-Jump Piller (bottom).asset
+  artifactKey: Guid(5463b7fa231a0764ca9f7d15f5da0ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-Jump Piller (bottom).asset using Guid(5463b7fa231a0764ca9f7d15f5da0ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13da2a73d954aa12170fd1effd22dc3d') in 0.122171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/sprites/Level 1 Platform (middle).asset
+  artifactKey: Guid(0d04fb545268d054a858a6aa642bfd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Platform (middle).asset using Guid(0d04fb545268d054a858a6aa642bfd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4fdbbb2c3ab4c2e526392360cb017d') in 0.097665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/sprites/Ground Wall (right).asset
+  artifactKey: Guid(c2ee72f5f7b6af444aef26b5a6274658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Wall (right).asset using Guid(c2ee72f5f7b6af444aef26b5a6274658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094d871c64ac7ba64b742770e748ba6c') in 0.091199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone top-right).asset
+  artifactKey: Guid(e798996041592e44599fe49f83af9cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone top-right).asset using Guid(e798996041592e44599fe49f83af9cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20f3282128188e47e0dd053e1689e934') in 0.102972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/sprites/Wall-jump Bottom End (right) Texture_3.asset
+  artifactKey: Guid(b5051dfb00afc6f47815dd21e52bc20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Bottom End (right) Texture_3.asset using Guid(b5051dfb00afc6f47815dd21e52bc20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3adf4333f43967bfba6ceb7b9540a0e3') in 0.093906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/sprites/Level 1 Ground Platform Texture.png
+  artifactKey: Guid(a1015608017c3e041a9c8c52a03ffaa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground Platform Texture.png using Guid(a1015608017c3e041a9c8c52a03ffaa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e81c69614347360b93554dbf97b8a6ac') in 0.101953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/sprites/Ground Inner T Intersection (right).asset
+  artifactKey: Guid(651db375596ccca45828995e4778c146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Inner T Intersection (right).asset using Guid(651db375596ccca45828995e4778c146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafe5c801dc55552342909f6eea8d8d9') in 0.099452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/sprites/PlatformWall.png
+  artifactKey: Guid(743ac0f2607a5854cbd5fa791e9cf16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/PlatformWall.png using Guid(743ac0f2607a5854cbd5fa791e9cf16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c3c9ff3757bfba882d3a587f6125580') in 0.094306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/sprites/Z.png
+  artifactKey: Guid(68e5c5f83d06c564dbf9f1191bb7a02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Z.png using Guid(68e5c5f83d06c564dbf9f1191bb7a02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca230d63583c0153b906fbb1a1b291c7') in 0.130138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001429 seconds.
+  path: Assets/sprites/Ground Piller Intersection (leftside right).asset
+  artifactKey: Guid(4fed51ef4c8d125499e0f0057a18913f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller Intersection (leftside right).asset using Guid(4fed51ef4c8d125499e0f0057a18913f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4497a543b062252bb05182906cf75509') in 0.087933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/sprites/SawTrail.png
+  artifactKey: Guid(ee1e7fe95dbb56a4ba79eb56a2306b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/SawTrail.png using Guid(ee1e7fe95dbb56a4ba79eb56a2306b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5defa52f55c3116eff516a52858629e1') in 0.136014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/sprites/FireBall.png
+  artifactKey: Guid(fbbd6f0e58c0d2745bda9a9bc043a480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/FireBall.png using Guid(fbbd6f0e58c0d2745bda9a9bc043a480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827c5fdc25448fb4d1c1ba815e5f7830') in 0.099279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000555 seconds.
+  path: Assets/sprites/Ground Piller End (down).asset
+  artifactKey: Guid(ecfd8084ac835004bb29fc4960a7ac05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller End (down).asset using Guid(ecfd8084ac835004bb29fc4960a7ac05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae72e365ed07c38aa9dd53271a35bf60') in 0.085576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/sprites/Ground Piller Intersection (rightside down).asset
+  artifactKey: Guid(50bb2cb3f4a65444a85af5d739b6b384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller Intersection (rightside down).asset using Guid(50bb2cb3f4a65444a85af5d739b6b384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a784d1d739a3e53ce610d52ff3b1712c') in 0.076639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000881 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone bottom right).asset
+  artifactKey: Guid(3d730baee1a1d794db086539db2dd244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone bottom right).asset using Guid(3d730baee1a1d794db086539db2dd244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb2f631cc83fdde9b8446abbdb520d6') in 0.097242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone top-left).asset
+  artifactKey: Guid(78f58cf01dcb8684e9347e902265433d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone top-left).asset using Guid(78f58cf01dcb8684e9347e902265433d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10406befc22efebfc9507db02b73a397') in 0.097378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Assets/sprites/Ground Base.asset
+  artifactKey: Guid(939fdce6f8a00ca4d859cc836e5befcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Base.asset using Guid(939fdce6f8a00ca4d859cc836e5befcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014487ad170ffd79a31890bd5ad8f15b') in 0.068835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.018745 seconds.
+  path: Assets/sprites/Max Waking Up.png
+  artifactKey: Guid(b930931bd9ac8b74888fae87183d784c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Waking Up.png using Guid(b930931bd9ac8b74888fae87183d784c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37d1922b4dd486a9c1b05bd0eb361a0') in 0.109315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/sprites/Ground Base Outer Corner (left).asset
+  artifactKey: Guid(50ba888e57b39944bad98aa8cff964c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Base Outer Corner (left).asset using Guid(50ba888e57b39944bad98aa8cff964c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06874df25e8e24d263a15c12cce339ec') in 0.096695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002160 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone inner-top-right).asset
+  artifactKey: Guid(74d3284b723c9cb45ab38d5ab5e531c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone inner-top-right).asset using Guid(74d3284b723c9cb45ab38d5ab5e531c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b28c5036fb6ad9ea4ba2947d308f165c') in 0.090438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000495 seconds.
+  path: Assets/sprites/W1 Ground Spikes.asset
+  artifactKey: Guid(b71f55a9d700ffa4ab1c3ca3e67b43c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/W1 Ground Spikes.asset using Guid(b71f55a9d700ffa4ab1c3ca3e67b43c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f23ab0546ce80581c945fcd8f284f1d') in 0.091351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/sprites/Decoration Grass.png
+  artifactKey: Guid(fe4980fc4c9109c4a8cf2b5dae50db27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Decoration Grass.png using Guid(fe4980fc4c9109c4a8cf2b5dae50db27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37cd669ed63f4d563329d3feda022c9a') in 0.116469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/sprites/Wall-Jump Piller Left End (top).asset
+  artifactKey: Guid(ae2bcf95b73e50549ae0307e9a35400a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-Jump Piller Left End (top).asset using Guid(ae2bcf95b73e50549ae0307e9a35400a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5529a1b83a2c6d65de3a3122e24832c7') in 0.085658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/sprites/Max Falling.png
+  artifactKey: Guid(69d7d7dc49bcd8b488ee71977bbba437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Falling.png using Guid(69d7d7dc49bcd8b488ee71977bbba437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9fab0cad19bb0edb67207173ac25c6e') in 0.095518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone bottom left).asset
+  artifactKey: Guid(eed1d3723a97466488d6a44e6d6a39d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone bottom left).asset using Guid(eed1d3723a97466488d6a44e6d6a39d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c18f58626760cf4e712ae9c84cfd95c') in 0.090434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000450 seconds.
+  path: Assets/sprites/Wall-jump Top Corner (right) Texture_0.asset
+  artifactKey: Guid(fb5e4cf7f1159614a9fa2f2a5d807761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Top Corner (right) Texture_0.asset using Guid(fb5e4cf7f1159614a9fa2f2a5d807761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b327cefdb4af9229bf6ae8ec4b9523b6') in 0.089937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000818 seconds.
+  path: Assets/sprites/Ground Ceiling Outer Corner (left).asset
+  artifactKey: Guid(19d06192a7e0d904985c64eb0adfc5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Ceiling Outer Corner (left).asset using Guid(19d06192a7e0d904985c64eb0adfc5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '938eb300c09802b7908f6158a48fe552') in 0.083338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000731 seconds.
+  path: Assets/sprites/Max Jumping.png
+  artifactKey: Guid(2fd270ce7757f544eb07c10faf2c02e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Jumping.png using Guid(2fd270ce7757f544eb07c10faf2c02e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd3157f5546e59b5716a415f89139db') in 0.107680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/sprites/Ground Piller Intersection (leftside left).asset
+  artifactKey: Guid(b81b4332bf9c34c4f9eb26045105dc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller Intersection (leftside left).asset using Guid(b81b4332bf9c34c4f9eb26045105dc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abca60dd9c1d827a1aa600f350cafbf6') in 0.081660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000660 seconds.
+  path: Assets/sprites/Wall-jump Top End (left) Texture_6.asset
+  artifactKey: Guid(d4602678e34aa1e4a9af186eed6bc513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Top End (left) Texture_6.asset using Guid(d4602678e34aa1e4a9af186eed6bc513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe699f570310e65d92827bed5fa4b96') in 0.082186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/sprites/Max Looking Around.png
+  artifactKey: Guid(74982e5182f92954c82c8645fd30e59f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Looking Around.png using Guid(74982e5182f92954c82c8645fd30e59f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb8f228f9d92fb4310adde925075293') in 0.187492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/sprites/Wall-jump Bottom End (left) Texture_8.asset
+  artifactKey: Guid(f3885374f6ba98642aaab2baa7c68dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Bottom End (left) Texture_8.asset using Guid(f3885374f6ba98642aaab2baa7c68dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408eeea8380e68717fc58abeead71914') in 0.080479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000565 seconds.
+  path: Assets/sprites/Ground Inner T Intersection (left).asset
+  artifactKey: Guid(432a248bc2259bc48a1aa47d141b2b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Inner T Intersection (left).asset using Guid(432a248bc2259bc48a1aa47d141b2b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4f6092e3bb93612abba9024a901b37') in 0.109028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000760 seconds.
+  path: Assets/sprites/Tree Stump.png
+  artifactKey: Guid(2cc2fed66ccec2849b47682b8d6965dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Tree Stump.png using Guid(2cc2fed66ccec2849b47682b8d6965dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21195a478fd3e2439ce0db6f54e876b') in 0.125169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.010288 seconds.
+  path: Assets/sprites/Max Falling(ofacliff).png
+  artifactKey: Guid(07016bb78b099674cb7ab6baf87c9a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Falling(ofacliff).png using Guid(07016bb78b099674cb7ab6baf87c9a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98a52b6e3fbf7dce5e649e55c740c5b') in 0.139375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000589 seconds.
+  path: Assets/sprites/HP Hearts.png
+  artifactKey: Guid(6995924f6402b4f46b23c272433d14a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/HP Hearts.png using Guid(6995924f6402b4f46b23c272433d14a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e499d767ef9f3fadc582f8bd197fdac') in 0.143148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/sprites/PipeStraight (1).png
+  artifactKey: Guid(f51be674beefd99459b4a88b6d8e19cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/PipeStraight (1).png using Guid(f51be674beefd99459b4a88b6d8e19cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5223df14e59e4787a921ccb987a3f442') in 0.100335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/sprites/Wall-Jump Piller End (bottom).asset
+  artifactKey: Guid(d99ab74887f86a04eb791eef55a2e7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-Jump Piller End (bottom).asset using Guid(d99ab74887f86a04eb791eef55a2e7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7c75ecd68bec1c434a21137be617bb') in 0.070559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/sprites/Capsule Shard.png
+  artifactKey: Guid(307e87b3383ae0a46bd673f8b0204015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Capsule Shard.png using Guid(307e87b3383ae0a46bd673f8b0204015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97dcd981ee2adb008d4c565a5e15504d') in 0.103491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone top).asset
+  artifactKey: Guid(7be48390b7db31d4db15ebd39252ec14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone top).asset using Guid(7be48390b7db31d4db15ebd39252ec14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549fdf77e20289d5a1822e5e8f3def2b') in 0.068808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000511 seconds.
+  path: Assets/sprites/Wall-Jump Piller (top).asset
+  artifactKey: Guid(a3e7af2cb0eac2249ba000cee94f20b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-Jump Piller (top).asset using Guid(a3e7af2cb0eac2249ba000cee94f20b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65d4b65745af6c081ccac5fa33419eb') in 0.132231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/sprites/Wall-jump Texture.png
+  artifactKey: Guid(ff5e8f44b361896488add0546f7a4aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Texture.png using Guid(ff5e8f44b361896488add0546f7a4aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e198ae0643dc96c9a2bb1a6338458b14') in 0.148912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/sprites/Ground Wall (left).asset
+  artifactKey: Guid(1e28279878bd03340b44462c5b763626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Wall (left).asset using Guid(1e28279878bd03340b44462c5b763626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb79ec68d265ff2af1b5451bdb5a9808') in 0.094542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/sprites/Wall-Jump Piller Right End (top).asset
+  artifactKey: Guid(aea1cdadb517fcb4cbe9902463a7eff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-Jump Piller Right End (top).asset using Guid(aea1cdadb517fcb4cbe9902463a7eff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d02fe4cfb1af49778361195de3231b') in 0.086224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/sprites/Magma Wander Turning.png
+  artifactKey: Guid(9be3e3a23bfb5e04482b85eebb928195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Magma Wander Turning.png using Guid(9be3e3a23bfb5e04482b85eebb928195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a9df8225ba42c68e46818833f2dceb') in 0.123463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
+  path: Assets/sprites/Lava Top.png
+  artifactKey: Guid(d794ee20767e52a4bb1eae6763475771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Lava Top.png using Guid(d794ee20767e52a4bb1eae6763475771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7dc180e38f140fd29fd2063759bcda5') in 0.124756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/sprites/Max Taking Damadge.png
+  artifactKey: Guid(accb609e98ed9bc42b91ec6f4e594b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Taking Damadge.png using Guid(accb609e98ed9bc42b91ec6f4e594b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '425542a3e49accc5f0246215d23dc304') in 0.095130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001077 seconds.
+  path: Assets/sprites/Max getting spiked.png
+  artifactKey: Guid(4f3701300aa26d44b8d25a6e2d668be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max getting spiked.png using Guid(4f3701300aa26d44b8d25a6e2d668be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f10dc4e223345c6b5b613159048d7c') in 0.071609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/sprites/Wall-jump Piller (right) (1)_0.asset
+  artifactKey: Guid(e9910125eeec6fc4391483d700799ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Piller (right) (1)_0.asset using Guid(e9910125eeec6fc4391483d700799ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566efb1307e12c45a0ea7d8f49fa1bf1') in 0.091887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/sprites/Max.png
+  artifactKey: Guid(4c8633f4a036f7143ba8d83b0ea5675d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max.png using Guid(4c8633f4a036f7143ba8d83b0ea5675d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31edbaf748c43c9d51ef349534a2414') in 0.102618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/sprites/Transport Pipe Exit.png
+  artifactKey: Guid(7b20266957cd6de468cb5067c3fb6f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Transport Pipe Exit.png using Guid(7b20266957cd6de468cb5067c3fb6f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed56037391c5e19d8bfab5f805ffbff') in 0.117114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000555 seconds.
+  path: Assets/sprites/Wall-Jump Piller End (top).asset
+  artifactKey: Guid(825e60fa2ccec4047ab142ece3e7addf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-Jump Piller End (top).asset using Guid(825e60fa2ccec4047ab142ece3e7addf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526b10a571aede996b3e2b0b90faac38') in 0.083941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/sprites/Level 1 Platform (left end).asset
+  artifactKey: Guid(5e6d236619712d543a1f1883f80b9e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Platform (left end).asset using Guid(5e6d236619712d543a1f1883f80b9e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8148b052322546e395f1ac6b08c5b94d') in 0.085968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/sprites/Cannon Base.png
+  artifactKey: Guid(8b2f0163eb5c61c418d5781f6a0f0d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Cannon Base.png using Guid(8b2f0163eb5c61c418d5781f6a0f0d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b49e329ccc9a38eb981882845db30380') in 0.099146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/sprites/Magma Wanderer.png
+  artifactKey: Guid(399a04c92349ae94ea9ea930ce50a94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Magma Wanderer.png using Guid(399a04c92349ae94ea9ea930ce50a94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c6a1a833c4a87fe7a17d06bb6afb94') in 0.093961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/sprites/Max Sleeping.png
+  artifactKey: Guid(403f706e253f5d84197f1eccce50054b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Sleeping.png using Guid(403f706e253f5d84197f1eccce50054b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332ee35a4a96046a8d55b2b6cfa10ace') in 0.106021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000465 seconds.
+  path: Assets/sprites/Wall-Jump Piller (middle).asset
+  artifactKey: Guid(fd3a3077089904e4ea2f93a37856925d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-Jump Piller (middle).asset using Guid(fd3a3077089904e4ea2f93a37856925d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b5862658aed8d88c9e2f3a1ae7963b4') in 0.083564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/sprites/Ground T Intersection (down).asset
+  artifactKey: Guid(b18f723dccfb5c8488a3035b148ab7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground T Intersection (down).asset using Guid(b18f723dccfb5c8488a3035b148ab7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb484a948e1f7bd05d7333012abafcb1') in 0.100806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone right).asset
+  artifactKey: Guid(b80601043db457c4793ceb163658cc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone right).asset using Guid(b80601043db457c4793ceb163658cc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9facdd0df6d65646e7c2de472c0837de') in 0.091144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/sprites/Level 1 Ground (stone).asset
+  artifactKey: Guid(2e55d7aad4eb7ab4699bf6ae0ca32238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (stone).asset using Guid(2e55d7aad4eb7ab4699bf6ae0ca32238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f29b67ae7ccc75693f9ad9394ddb49') in 0.091521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/sprites/Jump Orb.png
+  artifactKey: Guid(74669de7953acc94cb7b162c81d2de90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Jump Orb.png using Guid(74669de7953acc94cb7b162c81d2de90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba4c3123f9d3e3a7533cf2e8faf373db') in 0.112490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/sprites/Ground Ceiling Inner Corner (left).asset
+  artifactKey: Guid(e25f6542dc43fa04bac3dcfabd2dc2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Ceiling Inner Corner (left).asset using Guid(e25f6542dc43fa04bac3dcfabd2dc2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2161b06c59927485b56e4e0db7c67d68') in 0.085303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/sprites/Level 1 Platform (right end).asset
+  artifactKey: Guid(69a3c66ddc006e74e982cd8457535ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Platform (right end).asset using Guid(69a3c66ddc006e74e982cd8457535ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbc079c863bb42255e64a14b2ecee69') in 0.090833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000593 seconds.
+  path: Assets/sprites/Max Jump-Moving.png
+  artifactKey: Guid(ce0a6a69976f12a46ae38892b906c0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Jump-Moving.png using Guid(ce0a6a69976f12a46ae38892b906c0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4d4e478c08e8070c9dfa48e49ed4e5') in 0.105906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/sprites/Wall-jump Top End (right) Texture_1.asset
+  artifactKey: Guid(d2f1c5915096f2045b5f65eac213da2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Top End (right) Texture_1.asset using Guid(d2f1c5915096f2045b5f65eac213da2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ea3049a36d2117cb14597ddd00daa4') in 0.091479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/sprites/Max Transformation (fire)-0002.png
+  artifactKey: Guid(10b4d518e96119a48bc96c3a5c482604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Max Transformation (fire)-0002.png using Guid(10b4d518e96119a48bc96c3a5c482604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '737e935149350ea401bf93d6d060318f') in 0.265544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/sprites/Ground Ceiling Outer Corner (right).asset
+  artifactKey: Guid(876fcd942dc16c34bb9e39150fe3d5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Ceiling Outer Corner (right).asset using Guid(876fcd942dc16c34bb9e39150fe3d5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9fd5c86ea24c3f64b75c17c9d616103') in 0.086180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/sprites/Ground Ceiling.asset
+  artifactKey: Guid(b93c013adcabe564784b4c2b9b8b176f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Ceiling.asset using Guid(b93c013adcabe564784b4c2b9b8b176f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd151e769c616efe57576eec83f35f0b') in 0.098063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/sprites/Ground Piller Straight (updown).asset
+  artifactKey: Guid(708fd2930c6ec1a418ef40e5812bab02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller Straight (updown).asset using Guid(708fd2930c6ec1a418ef40e5812bab02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '028863eef3d8d2ca42c3bff064f85932') in 0.086808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000493 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone inner-top-left).asset
+  artifactKey: Guid(d84e00d12894edf4ba5383a56e0bb827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone inner-top-left).asset using Guid(d84e00d12894edf4ba5383a56e0bb827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d8b06340b6e65e82fcf4b87d6485cb') in 0.093113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000540 seconds.
+  path: Assets/sprites/Pipe cross.png
+  artifactKey: Guid(52503094554905a49955183f77d2f5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Pipe cross.png using Guid(52503094554905a49955183f77d2f5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1749930acee42d6a2f8bcf384a38025c') in 0.105890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/sprites/Player HUD.png
+  artifactKey: Guid(1b141e6e83ef9694ea3df45733a5f5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Player HUD.png using Guid(1b141e6e83ef9694ea3df45733a5f5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f7f94fb397d57356c627a0aac190e12') in 0.095076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/sprites/Ground Piller End (left).asset
+  artifactKey: Guid(2ec996d37c1125443a8fd40325c0bbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller End (left).asset using Guid(2ec996d37c1125443a8fd40325c0bbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeafcb826e4e36ccb0ce22239cfd0b0a') in 0.101690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001123 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone bottom).asset
+  artifactKey: Guid(a8f9a476aca6ee945b7119ed3dad346f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone bottom).asset using Guid(a8f9a476aca6ee945b7119ed3dad346f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5356d64d8aeb8307ff88252dd7f7ac') in 0.124858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000503 seconds.
+  path: Assets/sprites/Ground Piller Intersection (rightside right).asset
+  artifactKey: Guid(e28bb29335bba0a47a46ac33aade570d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller Intersection (rightside right).asset using Guid(e28bb29335bba0a47a46ac33aade570d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046f5ecbd04add5a373fd8d181a9a1d2') in 0.086718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000452 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone inner-bottom-right).asset
+  artifactKey: Guid(c35fc5867a268c24a86b854140484687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone inner-bottom-right).asset using Guid(c35fc5867a268c24a86b854140484687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0fa4fa734a6a4c9a99cbd8be8451764') in 0.085583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/sprites/Ground T Intersection (up).asset
+  artifactKey: Guid(f4118565502291f489f4e21acb8f0b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground T Intersection (up).asset using Guid(f4118565502291f489f4e21acb8f0b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cce3c016b0237281ea29b7940ec009e9') in 0.085440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/sprites/Level 1 Ground (dirt to stone inner-bottom-left).asset
+  artifactKey: Guid(6f390f584220ed44281b558af1a9d330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Level 1 Ground (dirt to stone inner-bottom-left).asset using Guid(6f390f584220ed44281b558af1a9d330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2edfde530ad84caa8b787cba41a6b5') in 0.089980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/sprites/Ground Middle.asset
+  artifactKey: Guid(a968ddffe20d61342afd097fc750cf6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Middle.asset using Guid(a968ddffe20d61342afd097fc750cf6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aef74819a41966d7e307bc97be1c697') in 0.090262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/sprites/CannonShooter.png
+  artifactKey: Guid(fd9239ea3d8a97241a0759344d61b3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/CannonShooter.png using Guid(fd9239ea3d8a97241a0759344d61b3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1069756279ad2c3ac6df54c38868db') in 0.090880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/sprites/Ground Piller Intersection (leftside down).asset
+  artifactKey: Guid(9657c4875f82dfc49a111502d9e06291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller Intersection (leftside down).asset using Guid(9657c4875f82dfc49a111502d9e06291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a816614af9d04a7e3e36c70fb476ac') in 0.085758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000450 seconds.
+  path: Assets/sprites/Ground Base Inner Corner (left).asset
+  artifactKey: Guid(39e470a3c6645ea42a6113d0671dec36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Base Inner Corner (left).asset using Guid(39e470a3c6645ea42a6113d0671dec36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3df62dd25bd4df9a4d2b03dcbc40b383') in 0.093635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/sprites/Fire Max1-sheet.png
+  artifactKey: Guid(7e1027d068437824ab579304595f441e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Fire Max1-sheet.png using Guid(7e1027d068437824ab579304595f441e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d861e78cd3326315de0b343ff4d457d') in 0.115665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/sprites/Ground T Intersection (right).asset
+  artifactKey: Guid(f078ea2e73180e84e987428837a92f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground T Intersection (right).asset using Guid(f078ea2e73180e84e987428837a92f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a148fb8063e814d6f8bf05988f7e92f') in 0.098190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000512 seconds.
+  path: Assets/sprites/Ground Texture 2 (1).png
+  artifactKey: Guid(30694123ef2085b439d2779f30119bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Texture 2 (1).png using Guid(30694123ef2085b439d2779f30119bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '134020138c181e46ca524c434b73e151') in 0.099910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000518 seconds.
+  path: Assets/sprites/Ground Base Outer Corner (right).asset
+  artifactKey: Guid(fd32f0e98a8936c4c85b1c7414b8ab35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Base Outer Corner (right).asset using Guid(fd32f0e98a8936c4c85b1c7414b8ab35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e71d04b5c05c6d92f44bb794a23837') in 0.087817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/sprites/Wall-jump Piller (left) (1)_1.asset
+  artifactKey: Guid(26d322effc3b4c742b96c773f7e23267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Wall-jump Piller (left) (1)_1.asset using Guid(26d322effc3b4c742b96c773f7e23267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5bbfeabb5295c04274972c3022b59fc') in 0.089647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/sprites/Ground Piller End (right).asset
+  artifactKey: Guid(183e1df83a0f4bf4c8bc7eb79f03a62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Piller End (right).asset using Guid(183e1df83a0f4bf4c8bc7eb79f03a62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c21f937b8e4db4620585397de3d97b0') in 0.085602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/sprites/Ground Inner T Intersection (down).asset
+  artifactKey: Guid(5ebe25f345c7eda4b88360e5e190be11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Inner T Intersection (down).asset using Guid(5ebe25f345c7eda4b88360e5e190be11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95342d7c761e2849c62afa6b18935513') in 0.089374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003537 seconds.
+  path: Assets/sprites/Ground Inner T Intersection (up).asset
+  artifactKey: Guid(fb3e248400ac0ac418e60610e2c4062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Inner T Intersection (up).asset using Guid(fb3e248400ac0ac418e60610e2c4062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6fd4a024e9e595e43252c9d68e18400') in 0.080542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/sprites/PowerUp Capsule (fire).png
+  artifactKey: Guid(4ac71ee8e4a80fd4ab4513d9559fc79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/PowerUp Capsule (fire).png using Guid(4ac71ee8e4a80fd4ab4513d9559fc79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bef727614c922c18464b4c0951e81f9') in 0.144977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001102 seconds.
+  path: Assets/sprites/PipeTurn.png
+  artifactKey: Guid(bb7242faf4b1114409140287e0a253d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/PipeTurn.png using Guid(bb7242faf4b1114409140287e0a253d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e408cba7df57ed381ccafea8bdcde7b4') in 0.096872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/sprites/Ground Base Inner Corner (left) 1.asset
+  artifactKey: Guid(70ac9065d494b2a4091ab5ec6912eeff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Ground Base Inner Corner (left) 1.asset using Guid(70ac9065d494b2a4091ab5ec6912eeff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4821691ad96eb479a6dfc7a8e8d0f33d') in 0.078833 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 116.5 MB.
+System memory in use after: 116.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2040.
+Total: 25.338800 ms (FindLiveObjects: 0.360000 ms CreateObjectMapping: 0.139100 ms MarkObjects: 24.583800 ms  DeleteObjects: 0.253100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018917 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.596 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3598ms)
+		BeginReloadAssembly (525ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (61ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (112ms)
+		EndReloadAssembly (2889ms)
+			LoadAssemblies (434ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (828ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (200ms)
+			SetupLoadedEditorAssemblies (1176ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (279ms)
+				ProcessInitializeOnLoadAttributes (789ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1532 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.5 MB.
+System memory in use after: 146.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2043.
+Total: 6.366700 ms (FindLiveObjects: 0.227000 ms CreateObjectMapping: 0.063100 ms MarkObjects: 5.984000 ms  DeleteObjects: 0.090700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
