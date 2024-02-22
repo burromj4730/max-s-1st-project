@@ -291,12 +291,16 @@ public class playerMovement : MonoBehaviour
 
     IEnumerator TurnOffCurrentIdle()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(0.1f);
+        AnimatorClipInfo[] info = animator.GetCurrentAnimatorClipInfo(0);
+        yield return new WaitForSeconds(info[0].clip.length);
         for (int i = 1; i <= idleAnimCount; i++)
         {
             animator.SetBool("Idle" + i.ToString(), false);
         }
         idleTime = false;
+        idleTimerStarted = true;
+        StartCoroutine("IdleTimer");
     }
     IEnumerator WakeUpTimer()
     {

@@ -24,14 +24,7 @@ public class PlatformCollider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.velocity.y > 0)
-        {
-            M_collider.enabled = false;
-        }
-        else
-        {
-            M_collider.enabled = true;
-        }
+
         if (moving_Up)
         {
             if (transform.position.y < starting_Y + floating_Movement)
@@ -54,5 +47,28 @@ public class PlatformCollider : MonoBehaviour
                 moving_Up = true;
             }
         }
+                if (player.velocity.y > 0)
+        {
+            M_collider.enabled = false;
+        }
+        else
+        {
+            M_collider.enabled = true;
+        }
     }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.contacts[0].point.y > player.transform.position.y)
+    //    {
+    //        M_collider.enabled = false;
+    //    }
+    //    else
+    //    {
+    //        M_collider.enabled = true;
+    //    }
+    //}
+    //private void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    M_collider.enabled = true;
+    //}
 }
