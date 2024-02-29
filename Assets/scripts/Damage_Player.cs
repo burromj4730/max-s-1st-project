@@ -8,14 +8,15 @@ public class Damage_Player : MonoBehaviour
 
     public int damage;
 
-    public Player_Health HP;
+   
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.layer == mask)
+        if (collision.gameObject.layer == 6)
         {
-            HP.TakeDamage(damage);
+            int direction = collision.transform.position.x < transform.position.x ? -1 : 1;
+            collision.gameObject.GetComponent<PlayerHealthSystem>().DoDamage(damage, direction);
         }
     }
 }
