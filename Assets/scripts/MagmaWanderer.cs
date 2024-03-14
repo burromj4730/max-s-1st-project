@@ -24,7 +24,7 @@ public class MagmaWanderer : MonoBehaviour
 
     public Animator magmaWanderer;
 
-    private bool canMove = true;
+    [HideInInspector] public bool canMove = true;
 
     public GameObject particles;
 

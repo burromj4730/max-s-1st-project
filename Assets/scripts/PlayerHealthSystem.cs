@@ -110,8 +110,9 @@ public class PlayerHealthSystem : MonoBehaviour
                 StartCoroutine("DamagedFace");
                 StartCoroutine("Invulnerable");
             }
-        }
         GetComponent<Rigidbody2D>().AddForce(new Vector2(direction, 1) * damageforce);
+        }
+
     }
     private void LateUpdate()
     {
@@ -182,4 +183,5 @@ public class PlayerHealthSystem : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Time.timeScale = 1f;
     }
+
 }
