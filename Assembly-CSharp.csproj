@@ -78,12 +78,13 @@
     <Compile Include="Assets\scripts\CheckPointManager.cs" />
     <Compile Include="Assets\scripts\CheckPoint.cs" />
     <Compile Include="Assets\scripts\ScriptsByBen\ChaseRetreatEnemy.cs" />
+    <Compile Include="Assets\scripts\PlayerHealthSystem.cs" />
     <Compile Include="Assets\scripts\Kill_player.cs" />
     <Compile Include="Assets\scripts\MovingPlatform.cs" />
     <Compile Include="Assets\scripts\Spiked.cs" />
     <Compile Include="Assets\scripts\MagmaWanderer.cs" />
     <Compile Include="Assets\scripts\Key.cs" />
-    <Compile Include="Assets\scripts\PlayerHealthSystem.cs" />
+    <Compile Include="Assets\scripts\Parallax.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

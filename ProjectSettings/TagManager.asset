@@ -17,8 +17,8 @@ TagManager:
   - TransportPipe
   - Ground
   - Enemy
-  - 
-  - 
+  - Level Edge
+  - Camera Colider
   - 
   - 
   - 
