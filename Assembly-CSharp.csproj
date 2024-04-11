@@ -69,6 +69,7 @@
     <Compile Include="Assets\scripts\OrbJump.cs" />
     <Compile Include="Assets\scripts\CameraFollowPlayer.cs" />
     <Compile Include="Assets\scripts\Player_Health.cs" />
+    <Compile Include="Assets\scripts\PauseMenu.cs" />
     <Compile Include="Assets\scripts\LockeDoor.cs" />
     <Compile Include="Assets\scripts\PlayerKeys.cs" />
     <Compile Include="Assets\scripts\FireFireBall.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\scripts\Crusher.cs" />
     <Compile Include="Assets\scripts\CheckPointManager.cs" />
     <Compile Include="Assets\scripts\CheckPoint.cs" />
+    <Compile Include="Assets\scripts\MainMenuManager.cs" />
     <Compile Include="Assets\scripts\ScriptsByBen\ChaseRetreatEnemy.cs" />
     <Compile Include="Assets\scripts\PlayerHealthSystem.cs" />
     <Compile Include="Assets\scripts\Kill_player.cs" />
@@ -85,8 +87,7 @@
     <Compile Include="Assets\scripts\Spiked.cs" />
     <Compile Include="Assets\scripts\MagmaWanderer.cs" />
     <Compile Include="Assets\scripts\Key.cs" />
-    <Compile Include="Assets\scripts\MainMenuManager.cs" />
-    <Compile Include="Assets\scripts\PauseMenu.cs" />
+    <Compile Include="Assets\scripts\Player_Attack.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

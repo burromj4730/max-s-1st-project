@@ -58,6 +58,8 @@ public class playerMovement : MonoBehaviour
 
     public int idleAnimCount;
 
+    public bool facingRight;
+
     private void Start()
     {
         
@@ -128,6 +130,7 @@ public class playerMovement : MonoBehaviour
                     animator.SetBool("Idle" + i.ToString(), false);
                 }
                 idleTime = false;
+                facingRight = false;
             }
             else if (Input.GetKey("right"))
             {
@@ -140,6 +143,7 @@ public class playerMovement : MonoBehaviour
                     animator.SetBool("Idle" + i.ToString(), false);
                 }
                 idleTime = false;
+                facingRight = true;
             }
             else if (Mathf.Abs(rb.velocity.x) < 0.1f)
             {
