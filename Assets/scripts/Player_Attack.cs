@@ -18,6 +18,10 @@ public class Player_Attack : MonoBehaviour
 
     private Animator animator;
 
+    public GameObject trail;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,12 +58,21 @@ public class Player_Attack : MonoBehaviour
                     }
                     else
                     {
+                        
                         if (hit.transform.position.x < transform.position.x)
                         {
                             Destroy(hit.collider.gameObject);
                         }
                     }
                 }
+            }
+            if (movment.facingRight)
+            {
+                trail.transform.localScale = new Vector3(1, 1, 1);
+            }
+            else
+            {
+                trail.transform.localScale = new Vector3(1, 1, -1);
             }
             animator.SetBool("Attack", true);
             StartCoroutine(AttackCoolDown());

@@ -119,7 +119,7 @@ public class playerMovement : MonoBehaviour
     {
         if (canMove)
         {
-            if (Input.GetKey("left"))
+            if (Input.GetKey(KeyCode.A))
             {
                 rb.AddForce(Vector2.left * moveSpeed * Time.deltaTime);
                 animator.SetBool("Moving", true);
@@ -132,7 +132,7 @@ public class playerMovement : MonoBehaviour
                 idleTime = false;
                 facingRight = false;
             }
-            else if (Input.GetKey("right"))
+            else if (Input.GetKey(KeyCode.D))
             {
                 rb.AddForce(Vector2.right * moveSpeed * Time.deltaTime);
                 animator.SetBool("Moving", true);
