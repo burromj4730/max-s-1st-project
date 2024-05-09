@@ -68,13 +68,12 @@ public class Player_Attack : MonoBehaviour
             }
             if (movment.facingRight)
             {
-                trail.transform.localScale = new Vector3(1, 1, 1);
+                animator.SetBool("Attack Right", true);
             }
             else
             {
-                trail.transform.localScale = new Vector3(1, 1, -1);
+                animator.SetBool("Attack Left", true);
             }
-            animator.SetBool("Attack", true);
             StartCoroutine(AttackCoolDown());
         }
     }
@@ -82,6 +81,7 @@ public class Player_Attack : MonoBehaviour
     {
         yield return new WaitForSeconds(attackCoolDown);
         canAttack = true;
-        animator.SetBool("Attack", false);
+        animator.SetBool("Attack Right", false);
+        animator.SetBool("Attack Left", false);
     }
 }
