@@ -20,7 +20,7 @@ public class Player_Attack : MonoBehaviour
 
     public GameObject trail;
 
-
+    public GameObject magmaDeath;
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +53,8 @@ public class Player_Attack : MonoBehaviour
                     {
                         if (hit.transform.position.x > transform.position.x)
                         {
+                            GameObject particals = Instantiate(magmaDeath, hit.transform.position, Quaternion.identity);
+                            particals.transform.position = hit.transform.position;
                             Destroy(hit.collider.gameObject);
                         }
                     }
@@ -61,6 +63,8 @@ public class Player_Attack : MonoBehaviour
                         
                         if (hit.transform.position.x < transform.position.x)
                         {
+                            GameObject particals = Instantiate(magmaDeath, hit.transform.position, Quaternion.identity);
+                            particals.transform.position = hit.transform.position;
                             Destroy(hit.collider.gameObject);
                         }
                     }
@@ -84,4 +88,5 @@ public class Player_Attack : MonoBehaviour
         animator.SetBool("Attack Right", false);
         animator.SetBool("Attack Left", false);
     }
+    
 }

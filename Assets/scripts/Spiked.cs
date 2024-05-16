@@ -20,7 +20,7 @@ public class Spiked : MonoBehaviour
 
     private void Start()
     {
-        
+        camera = Camera.main.gameObject;
     }
 
     private void Update()

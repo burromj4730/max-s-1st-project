@@ -17,8 +17,12 @@ public class Parallax : MonoBehaviour
     void Start()
     {
         startingPos = transform.position;
-        spriteLength = GetComponent<SpriteRenderer>().bounds.size.x;
-        spriteHight = GetComponent<SpriteRenderer>().bounds.size.y;
+        if (GetComponent<SpriteRenderer>() != null)
+        {
+            spriteLength = GetComponent<SpriteRenderer>().bounds.size.x;
+            spriteHight = GetComponent<SpriteRenderer>().bounds.size.y;
+        }
+        
     }
 
     // Update is called once per frame
@@ -31,15 +35,19 @@ public class Parallax : MonoBehaviour
         float distanceY = position.y * amount.y;
         Vector3 newPosition = new Vector3(startingPos.x + distance, startingPos.y + distanceY, transform.position.z);
         transform.position = newPosition;
+        if (spriteLength != 0)
+        {
         if (check > startingPos.x + (spriteLength / 2))
-        {
-            startingPos.x += spriteLength;
+            {
+                startingPos.x += spriteLength;
 
-        }
-        else if (check < startingPos.x - (spriteLength / 2))
-        {
-            startingPos.x -= spriteLength;
+            }
+            else if (check < startingPos.x - (spriteLength / 2))
+            {
+                startingPos.x -= spriteLength;
 
+            }
         }
+        
     }
 }
