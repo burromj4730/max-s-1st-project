@@ -5,10 +5,14 @@ using UnityEngine;
 public class MapPlayerDiagonal : MonoBehaviour
 {
     public Transform startingPoint;
+
     public List<MapPoint.AccessiblePoint> currentlyAccessible = new List<MapPoint.AccessiblePoint>();
+
     public float mapMoveSpeed;
 
     private Rigidbody rb;
+
+    private bool canMove = true;
 
     private void Awake()
     {
@@ -21,6 +25,7 @@ public class MapPlayerDiagonal : MonoBehaviour
     {
         rb.velocity = Vector3.zero;
         currentlyAccessible = other.GetComponent<MapPoint>().canMoveTo;
+        canMove = true;
     }
 
     private void Update()
@@ -30,7 +35,7 @@ public class MapPlayerDiagonal : MonoBehaviour
 
         Transform targetPoint = null;
 
-        if (input.normalized != Vector2.zero)
+        if (input.normalized != Vector2.zero && canMove)
         {
             foreach (MapPoint.AccessiblePoint point in currentlyAccessible)
             {
@@ -55,6 +60,7 @@ public class MapPlayerDiagonal : MonoBehaviour
             Vector3 direction = targetPoint.position - transform.position;
 
             rb.velocity = direction.normalized * mapMoveSpeed;
+            canMove = false;
         }
     }
 }
