@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 1008a56b8a0d76c499ed899dd49b85fa
   - enabled: 1
+    path: Assets/Scenes/World Map (W1).unity
+    guid: ed7b38e996b174940b656df3603f11a6
+  - enabled: 1
     path: Assets/Scenes/World 1-Level 1.unity
     guid: 78e6caf980f826a4ba45f8344f640fb6
+  - enabled: 1
+    path: Assets/Scenes/World 1-Level 2.unity
+    guid: c0931c17c380f82419ae0f5309fbc3aa
   m_configObjects: {}

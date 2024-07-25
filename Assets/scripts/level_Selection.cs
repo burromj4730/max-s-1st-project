@@ -10,6 +10,14 @@ public class level_Selection : MonoBehaviour
 
     public Material completed;
 
+    public string levelSaveName;
+
+    public bool unlockedByDefault;
+
+    public int sceneIndex;
+
+
+
     public enum LevelState
     {
         LOCKED,
@@ -22,12 +30,36 @@ public class level_Selection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        if (PlayerPrefs.HasKey(levelSaveName))
+        {
+            switch (PlayerPrefs.GetInt(levelSaveName))
+            {
+                case 0:
+                    this.GetComponent<MeshRenderer>().material = locked;
+                    MState = LevelState.LOCKED;
+                    break;
+                case 1:
+                    this.GetComponent<MeshRenderer>().material = unlockedUncomplete;
+                    MState = LevelState.UNLOCKED;
+                    break;
+                case 2:
+                    this.GetComponent<MeshRenderer>().material = completed;
+                    MState = LevelState.COMPLETE;
+                    break;
+                default:
+                    break;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt(levelSaveName, 0);
+        }
+        if (unlockedByDefault && MState != LevelState.COMPLETE)
+        {
+            this.GetComponent<MeshRenderer>().material = unlockedUncomplete;
+            MState = LevelState.UNLOCKED;
+        }
     }
+   
 }

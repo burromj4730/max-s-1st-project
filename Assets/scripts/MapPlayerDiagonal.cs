@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MapPlayerDiagonal : MonoBehaviour
 {
@@ -23,11 +24,25 @@ public class MapPlayerDiagonal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        rb.velocity = Vector3.zero;
-        currentlyAccessible = other.GetComponent<MapPoint>().canMoveTo;
-        canMove = true;
+        if (other.gameObject.layer == LayerMask.NameToLayer("Map Point"))
+        {
+            rb.velocity = Vector3.zero;
+            currentlyAccessible = other.GetComponent<MapPoint>().canMoveTo;
+            canMove = true;
+        }
+        
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.GetComponent<level_Selection>()!=null)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                SceneManager.LoadScene(other.gameObject.GetComponent<level_Selection>().sceneIndex);
+            }
+        }
+    }
     private void Update()
     {
         Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
