@@ -56,9 +56,9 @@ public class CameraFollowPlayer : MonoBehaviour
             transform.localPosition = Vector3.Lerp(transform.localPosition,
                  new Vector3((FreezePosition[currentPosition].freezePosition.x)  - tofollow.position.x,
                     (FreezePosition[currentPosition].freezePosition.y) - tofollow.position.y,
-                        transform.position.z), moveTime*0.001f);
+                        transform.position.z), moveTime*0.01f);
             cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, FreezePosition[currentPosition].cameraSize, moveTime);
-            if (Vector2.Distance(transform.position, FreezePosition[currentPosition].freezePosition) > 0.1f)
+            if (Vector2.Distance(transform.position, FreezePosition[currentPosition].freezePosition) <= 0.3f)
             {
                 reachedRoomCentre = true;
             }
@@ -66,15 +66,18 @@ public class CameraFollowPlayer : MonoBehaviour
         else if(reachedRoomCentre)
         {
             Vector3 playerPos = tofollow.position;
-            playerPos.z = transform.localPosition.z;
-            Vector3 midPoint = new Vector3(FreezePosition[currentPosition].freezePosition.x, FreezePosition[currentPosition].freezePosition.y,transform.localPosition.z) - playerPos;
-            midPoint = midPoint.normalized;
-            midPoint *= Vector3.Distance(transform.position, playerPos) / 2;
-            transform.localPosition = Vector3.Lerp(transform.localPosition, midPoint, moveTime / 2);
-            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, -21.3f);
+            //playerPos.z = transform.localPosition.z;
+            //playerPos.y = transform.localPosition.y;
+            transform.localPosition = new Vector3(FreezePosition[currentPosition].freezePosition.x, FreezePosition[currentPosition].freezePosition.y, transform.localPosition.z)-playerPos;
+            //Vector3 midPoint = new Vector3(FreezePosition[currentPosition].freezePosition.x, FreezePosition[currentPosition].freezePosition.y,transform.localPosition.z) - playerPos;
+            //midPoint = midPoint.normalized;
+            //midPoint *= Vector3.Distance(transform.position, playerPos) / 2;
+            //transform.localPosition = Vector3.Lerp(transform.localPosition, midPoint, moveTime / 2);
+            //transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, -21.3f);
         }
         if (tofollow.position.x > FreezePosition[currentPosition].endFreezeX)
         {
+            reachedRoomCentre = false;
             currentPosition++;
         }
     }
