@@ -1,43 +1,40 @@
 fileFormatVersion: 2
-guid: d4ac2248e5bbe0e479b082bb96aaa7aa
+guid: ef61a92cde471ca4b823fe2dc5e83cae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3336167834811149697
-    second: W1 Cave Ground_0
+      213: -8652552588869374769
+    second: W1 Grass Ground_0
   - first:
-      213: -8765131319826462595
-    second: W1 Cave Ground_1
+      213: -8104568642257185914
+    second: W1 Grass Ground_1
   - first:
-      213: 3217603705403763604
-    second: W1 Cave Ground_2
+      213: 6963867811286520469
+    second: W1 Grass Ground_2
   - first:
-      213: 4093066916556499100
-    second: W1 Cave Ground_3
+      213: -5857022974231126554
+    second: W1 Grass Ground_3
   - first:
-      213: -8191035092073941979
-    second: W1 Cave Ground_4
+      213: 2798196471776674512
+    second: W1 Grass Ground_4
   - first:
-      213: -8536599851956200937
-    second: W1 Cave Ground_5
+      213: 1275497889693058551
+    second: W1 Grass Ground_5
   - first:
-      213: -5588892186930787255
-    second: W1 Cave Ground_6
+      213: -4118266233002229693
+    second: W1 Grass Ground_6
   - first:
-      213: 6433689974504723864
-    second: W1 Cave Ground_7
+      213: 7834654709448265094
+    second: W1 Grass Ground_7
   - first:
-      213: 5050323439653178125
-    second: W1 Cave Ground_8
+      213: 5476858427092655791
+    second: W1 Grass Ground_8
   - first:
-      213: 6007782400011681473
-    second: W1 Cave Ground_9
+      213: -4522871105689457069
+    second: W1 Grass Ground_9
   - first:
-      213: -2465212868120910256
-    second: W1 Cave Ground_10
-  - first:
-      213: -138382660126435273
-    second: W1 Cave Ground_11
+      213: 5793835045463545812
+    second: W1 Grass Ground_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,7 +124,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: W1 Cave Ground_0
+      name: W1 Grass Ground_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18da00158f27c4e20800000000000000
-      internalID: 3336167834811149697
+      spriteID: fcced0c7345fbe780800000000000000
+      internalID: -8652552588869374769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: W1 Cave Ground_1
+      name: W1 Grass Ground_1
       rect:
         serializedVersion: 2
         x: 32
@@ -162,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d78c718118ffb5680800000000000000
-      internalID: -8765131319826462595
+      spriteID: 6839d7c72c9c68f80800000000000000
+      internalID: -8104568642257185914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: W1 Cave Ground_2
+      name: W1 Grass Ground_2
       rect:
         serializedVersion: 2
         x: 64
@@ -183,14 +180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49b6290c58937ac20800000000000000
-      internalID: 3217603705403763604
+      spriteID: 5929282d0e0a4a060800000000000000
+      internalID: 6963867811286520469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: W1 Cave Ground_3
+      name: W1 Grass Ground_3
       rect:
         serializedVersion: 2
         x: 96
@@ -204,14 +201,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c98e043bcae7dc830800000000000000
-      internalID: 4093066916556499100
+      spriteID: 6edd6a303aca7bea0800000000000000
+      internalID: -5857022974231126554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: W1 Cave Ground_4
+      name: W1 Grass Ground_4
       rect:
         serializedVersion: 2
         x: 0
@@ -225,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5247c225bf8935e80800000000000000
-      internalID: -8191035092073941979
+      spriteID: 0d200089dd035d620800000000000000
+      internalID: 2798196471776674512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: W1 Cave Ground_5
+      name: W1 Grass Ground_5
       rect:
         serializedVersion: 2
         x: 32
@@ -246,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a9f7ad9a7e78980800000000000000
-      internalID: -8536599851956200937
+      spriteID: 7f54ae2a29a73b110800000000000000
+      internalID: 1275497889693058551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: W1 Cave Ground_6
+      name: W1 Grass Ground_6
       rect:
         serializedVersion: 2
         x: 64
@@ -267,14 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94cc80eca244072b0800000000000000
-      internalID: -5588892186930787255
+      spriteID: 3408a6b3eaaf8d6c0800000000000000
+      internalID: -4118266233002229693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: W1 Cave Ground_7
+      name: W1 Grass Ground_7
       rect:
         serializedVersion: 2
         x: 96
@@ -288,14 +285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8959855d1fe094950800000000000000
-      internalID: 6433689974504723864
+      spriteID: 68d418ec2f84abc60800000000000000
+      internalID: 7834654709448265094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: W1 Cave Ground_8
+      name: W1 Grass Ground_8
       rect:
         serializedVersion: 2
         x: 0
@@ -309,14 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0b4b5d196a561640800000000000000
-      internalID: 5050323439653178125
+      spriteID: fae56f7c8b5b10c40800000000000000
+      internalID: 5476858427092655791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: W1 Cave Ground_9
+      name: W1 Grass Ground_9
       rect:
         serializedVersion: 2
         x: 32
@@ -330,14 +327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ce3a80234eef5350800000000000000
-      internalID: 6007782400011681473
+      spriteID: 35e608c41b88b31c0800000000000000
+      internalID: -4522871105689457069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: W1 Cave Ground_10
+      name: W1 Grass Ground_10
       rect:
         serializedVersion: 2
         x: 64
@@ -351,29 +348,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0566eeb25fdc9cdd0800000000000000
-      internalID: -2465212868120910256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: W1 Cave Ground_11
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 738171c24bd541ef0800000000000000
-      internalID: -138382660126435273
+      spriteID: 4d7501cd646d76050800000000000000
+      internalID: 5793835045463545812
       vertices: []
       indices: 
       edges: []
