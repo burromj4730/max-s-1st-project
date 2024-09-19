@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFollowPlayer : MonoBehaviour
 {
-   
+
     public Transform tofollow;
 
     private bool justCollided;
@@ -53,28 +53,32 @@ public class CameraFollowPlayer : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, tofollow.position.y, transform.position.z);
             }
         }
-        if(tofollow.position.x > FreezePosition[currentPosition].startFreezeX)
+        if (tofollow.position.x > FreezePosition[currentPosition].startFreezeX && tofollow.position.x < FreezePosition[currentPosition].endFreezeX)
         {
             bossCamOn = true;
 
         }
-        else if(tofollow.position.x > FreezePosition[currentPosition].endFreezeX)
+
+        else if (tofollow.position.x > FreezePosition[currentPosition].endFreezeX && FreezePosition[currentPosition].islast)
         {
             bossCamOn = false;
+
+            cam.transform.localPosition = new Vector3(0f, 0f, cam.transform.localPosition.z);
+            cam.orthographicSize = defaultCameraSize;
         }
         if (bossCamOn)
         {
-            if (tofollow.position.x > FreezePosition[currentPosition].startFreezeX && !reachedRoomCentre) 
+            if (tofollow.position.x > FreezePosition[currentPosition].startFreezeX && !reachedRoomCentre)
             {
                 tofollow.gameObject.GetComponent<playerMovement>().canMove = false;
                 tofollow.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
                 Vector3 playerPos = tofollow.position;
                 float newCamx = playerPos.x > FreezePosition[currentPosition].freezePosition.x ? Mathf.Abs(playerPos.x - FreezePosition[currentPosition].freezePosition.x) * -1 : Mathf.Abs(FreezePosition[currentPosition].freezePosition.x - playerPos.x);
                 newCamx *= 0.5f;
-                transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(newCamx,(FreezePosition[currentPosition].freezePosition.y) - tofollow.position.y, transform.position.z), moveTime);
+                transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(newCamx, (FreezePosition[currentPosition].freezePosition.y) - tofollow.position.y, transform.position.z), moveTime);
                 cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, FreezePosition[currentPosition].cameraSize, moveTime);
                 Debug.Log("newX: " + newCamx + "\ntransformX: " + transform.localPosition.x);
-                if (Vector2.Distance(new Vector2(transform.localPosition.x,transform.position.y), new Vector2(newCamx, FreezePosition[currentPosition].freezePosition.y)) <= 0.1f)
+                if (Vector2.Distance(new Vector2(transform.localPosition.x, transform.position.y), new Vector2(newCamx, FreezePosition[currentPosition].freezePosition.y)) <= 0.1f)
                 {
                     reachedRoomCentre = true;
                     tofollow.gameObject.GetComponent<playerMovement>().canMove = true;
@@ -82,14 +86,14 @@ public class CameraFollowPlayer : MonoBehaviour
                     tofollow.gameObject.GetComponent<Rigidbody2D>().freezeRotation = true;
                 }
             }
-            else if(reachedRoomCentre)
+            else if (reachedRoomCentre)
             {
                 Vector3 playerPos = tofollow.position;
-                float newCamx = playerPos.x > FreezePosition[currentPosition].freezePosition.x ? Mathf.Abs(playerPos.x - FreezePosition[currentPosition].freezePosition.x) *-1 : Mathf.Abs(FreezePosition[currentPosition].freezePosition.x - playerPos.x);
+                float newCamx = playerPos.x > FreezePosition[currentPosition].freezePosition.x ? Mathf.Abs(playerPos.x - FreezePosition[currentPosition].freezePosition.x) * -1 : Mathf.Abs(FreezePosition[currentPosition].freezePosition.x - playerPos.x);
                 newCamx *= 0.5f;
-                playerPos.x = 0f; 
-                transform.localPosition = new Vector3(newCamx, FreezePosition[currentPosition].freezePosition.y, transform.localPosition.z)-playerPos;
-            
+                playerPos.x = 0f;
+                transform.localPosition = new Vector3(newCamx, FreezePosition[currentPosition].freezePosition.y, transform.localPosition.z) - playerPos;
+
             }
             if (tofollow.position.x > FreezePosition[currentPosition].endFreezeX)
             {
@@ -98,10 +102,10 @@ public class CameraFollowPlayer : MonoBehaviour
                 {
                     currentPosition++;
                 }
-                
+
             }
         }
-        
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
