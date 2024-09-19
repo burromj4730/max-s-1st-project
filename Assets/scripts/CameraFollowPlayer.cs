@@ -53,17 +53,14 @@ public class CameraFollowPlayer : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, tofollow.position.y, transform.position.z);
             }
         }
-        if(tofollow.position.x > FreezePosition[currentPosition].startFreezeX && tofollow.position.x < FreezePosition[currentPosition].endFreezeX)
+        if(tofollow.position.x > FreezePosition[currentPosition].startFreezeX)
         {
             bossCamOn = true;
 
         }
-        else if(tofollow.position.x > FreezePosition[currentPosition].endFreezeX && FreezePosition[currentPosition].islast)
+        else if(tofollow.position.x > FreezePosition[currentPosition].endFreezeX)
         {
             bossCamOn = false;
-
-            cam.transform.localPosition = new Vector3(0f, 0f, cam.transform.localPosition.z);
-            cam.orthographicSize = defaultCameraSize;
         }
         if (bossCamOn)
         {
