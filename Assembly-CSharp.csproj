@@ -94,6 +94,7 @@
     <Compile Include="Assets\scripts\Spiked.cs" />
     <Compile Include="Assets\scripts\MagmaWanderer.cs" />
     <Compile Include="Assets\scripts\Key.cs" />
+    <Compile Include="Assets\scripts\Magma_Wing.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
