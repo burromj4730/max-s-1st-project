@@ -1,0 +1,516 @@
+fileFormatVersion: 2
+guid: 18448bbe91176ed40987475cffcf032c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5621582588607108822
+    second: Max waving at player_0
+  - first:
+      213: 5122913450663085813
+    second: Max waving at player_1
+  - first:
+      213: 7858006944385395749
+    second: Max waving at player_2
+  - first:
+      213: -4701635205898719712
+    second: Max waving at player_3
+  - first:
+      213: -5183846267039525159
+    second: Max waving at player_4
+  - first:
+      213: 2394521310660081767
+    second: Max waving at player_5
+  - first:
+      213: -8085326722262460995
+    second: Max waving at player_6
+  - first:
+      213: 2038723803297156631
+    second: Max waving at player_7
+  - first:
+      213: 9173222242681938815
+    second: Max waving at player_8
+  - first:
+      213: -2221322296482411733
+    second: Max waving at player_9
+  - first:
+      213: -291601497674004122
+    second: Max waving at player_10
+  - first:
+      213: -8326714913756099573
+    second: Max waving at player_11
+  - first:
+      213: 8173669615730965271
+    second: Max waving at player_12
+  - first:
+      213: 8544427654257135317
+    second: Max waving at player_13
+  - first:
+      213: 2581223162330863329
+    second: Max waving at player_14
+  - first:
+      213: -8743912746726836774
+    second: Max waving at player_15
+  - first:
+      213: -6427398731369897395
+    second: Max waving at player_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Max waving at player_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a296d8a8b602cf1b0800000000000000
+      internalID: -5621582588607108822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f608d914ae381740800000000000000
+      internalID: 5122913450663085813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ce4a2beaf3d0d60800000000000000
+      internalID: 7858006944385395749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02eafe8c0bf60ceb0800000000000000
+      internalID: -4701635205898719712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_4
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6dfda09474f08b0800000000000000
+      internalID: -5183846267039525159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7683ff0027c0b3120800000000000000
+      internalID: 2394521310660081767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_6
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5929a1f262bcf80800000000000000
+      internalID: -8085326722262460995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_7
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e09aa5f700b4c10800000000000000
+      internalID: 2038723803297156631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_8
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73e4c42705dd4f70800000000000000
+      internalID: 9173222242681938815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_9
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bc282f3274c21e0800000000000000
+      internalID: -2221322296482411733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_10
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6694b2b9bf504fbf0800000000000000
+      internalID: -291601497674004122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_11
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cce9b17e0917c80800000000000000
+      internalID: -8326714913756099573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_12
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b3c05a535be6170800000000000000
+      internalID: 8173669615730965271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_13
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de45056ea7e39670800000000000000
+      internalID: 8544427654257135317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_14
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6ddbc4ac852d320800000000000000
+      internalID: 2581223162330863329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_15
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad536502fa167a680800000000000000
+      internalID: -8743912746726836774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Max waving at player_16
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.65, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42a6ea58ea4dc6a0800000000000000
+      internalID: -6427398731369897395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
