@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Magma_Wing : MonoBehaviour
 {
+    
     public enum state
     {
         IDLE = 0, ALERTED, AGRO
     }
+    [Header("FSM")]
     public state currentState;
 
     public Animator magmaWing;
@@ -24,25 +26,29 @@ public class Magma_Wing : MonoBehaviour
 
     public float freezePosMomento;
 
-    private bool attackCooldown;
-
+    [Header("References, Movement & shooting")]
+    public float moveSpeed;
     private Transform player;
-
-    public GameObject fireBall;
 
     private Rigidbody2D RB;
 
-    public float moveSpeed;
 
     public float idealDistance;
 
     public float acceleration;
 
     public float fireBallMovespeed;
-
-    private bool attackStarted;
+    public GameObject fireBall;
+    public Transform fireSpawn;
 
     public float attackEndFrames;
+
+    public bool alertStarted = false;
+
+   [Header("Debug Booleans")]
+    [SerializeField] private bool attackStarted;
+
+    [SerializeField] private bool attackCooldown;
 
     // Start is called before the first frame update
     void Start()
@@ -73,7 +79,10 @@ public class Magma_Wing : MonoBehaviour
                 magmaWing.SetBool("Idle", false);
                 magmaWing.SetBool("Alerted", true);
                 magmaWing.SetBool("Agro", false);
-                Invoke("alertTimer", 0.5f);
+                if (!alertStarted)
+                {
+                    Invoke("alertTimer", 0.5f);
+                }
                 break;
             case state.AGRO:
                 magmaWing.SetBool("Idle", false);
@@ -102,7 +111,7 @@ public class Magma_Wing : MonoBehaviour
                 }
                 else
                 {
-                    if (!attackCooldown)
+                    if (!attackCooldown && !attackStarted)
                     {
                         currentState = state.AGRO;
                     }
@@ -117,31 +126,31 @@ public class Magma_Wing : MonoBehaviour
     {
         currentState = state.IDLE;
     }
-    void AGROTimer()
-    {
-        currentState = state.AGRO;
-        attackCooldown = false;
-    }
+
     void Attack()
     {
         if (!attackStarted)
         {
             attackStarted = true;
+            Follow();
             Invoke("AttackFreese", freezePosMomento);
         }
     }
     void AttackFreese()
     {
         RB.velocity = Vector2.zero;
-        Vector3 direction = (player.position - transform.position).normalized;
-        GameObject newFire = Instantiate(fireBall, transform);
+        Vector3 direction = (player.position - fireSpawn.position).normalized;
+        GameObject newFire = Instantiate(fireBall, fireSpawn.position, Quaternion.identity);
+        newFire.transform.up = -direction;
         newFire.GetComponent<Rigidbody2D>().velocity = direction * fireBallMovespeed;
         Invoke("FinishAttack", attackEndFrames);
+        Follow();
     }
     void FinishAttack()
     {
         currentState = state.IDLE;
         attackCooldown = true;
+        attackStarted = false;
         Invoke("AttackCooldown", timeBetweenAtacks);
     }
     void AttackCooldown()
