@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1173854602}
   - component: {fileID: 1173854604}
   - component: {fileID: 1173854603}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fang Driping (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4815,7 +4815,7 @@ GameObject:
   - component: {fileID: 1863657732}
   - component: {fileID: 1863657731}
   - component: {fileID: 1863657730}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fang Driping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9617,7 +9617,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8143617375509744951}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9651,7 +9651,7 @@ GameObject:
   - component: {fileID: 2141275618593558591}
   - component: {fileID: 1961051598}
   - component: {fileID: 1961051597}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Magma_Wing_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9787,11 +9787,12 @@ MonoBehaviour:
   drawGizmos: 0
   timeBetweenAtacks: 1.5
   freezePosMomento: 0.92
-  fireBall: {fileID: 6492163487715660150, guid: 008d4eec4eadfee408b325c6036355a5, type: 3}
   moveSpeed: 1
   idealDistance: 5
   acceleration: 0.05
   fireBallMovespeed: 1
+  fireBall: {fileID: 6492163487715660150, guid: 008d4eec4eadfee408b325c6036355a5, type: 3}
+  fireSpawn: {fileID: 8143617375509744951}
   attackEndFrames: 0.249
   alertStarted: 0
   attackStarted: 0

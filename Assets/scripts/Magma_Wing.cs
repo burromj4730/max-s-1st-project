@@ -61,6 +61,17 @@ public class Magma_Wing : MonoBehaviour
     {
         checkConditions();
         runState();
+        if (playerInRadius)
+        {
+            if (player.position.x > transform.position.x)
+            {
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1f, 1f, 1f);
+            }
+        }
     }
     private void runState()
     {
@@ -126,7 +137,6 @@ public class Magma_Wing : MonoBehaviour
     {
         currentState = state.IDLE;
     }
-
     void Attack()
     {
         if (!attackStarted)
