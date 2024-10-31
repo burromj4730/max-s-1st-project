@@ -8,7 +8,7 @@ public class Damage_Player : MonoBehaviour
 
     public int damage;
    
-
+    public bool destroyUponContact = false;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -34,7 +34,13 @@ public class Damage_Player : MonoBehaviour
                         ai.gameObject.GetComponent<SpriteRenderer>().flipX = true;
                     }
                 }
+               
             }
+            
+        }
+        if (destroyUponContact)
+        {
+            Destroy(this.gameObject);
         }
     }
 }

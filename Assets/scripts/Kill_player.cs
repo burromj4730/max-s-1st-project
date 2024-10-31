@@ -4,11 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Kill_player : MonoBehaviour
 {
+    public bool destroyUponContact = false;
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
              SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (destroyUponContact)
+        {
+            Destroy(this.gameObject);
         }
     }
 
@@ -17,6 +24,10 @@ public class Kill_player : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (destroyUponContact)
+        {
+            Destroy(this.gameObject);
         }
     }
 }
