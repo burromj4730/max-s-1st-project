@@ -10,6 +10,8 @@ public class Damage_Player : MonoBehaviour
    
     public bool destroyUponContact = false;
 
+    public GameObject destroyParticle;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(collision.gameObject.name);
@@ -40,7 +42,22 @@ public class Damage_Player : MonoBehaviour
         }
         if (destroyUponContact)
         {
-            Destroy(this.gameObject);
+            if (destroyParticle != null)
+            {
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+                GetComponent<Collider2D>().enabled = false;
+                GetComponent<SpriteRenderer>().enabled = false;
+                GameObject particles = Instantiate(destroyParticle, this.transform);
+                Invoke("DestroyThis", destroyParticle.GetComponent<ParticleSystem>().startLifetime);
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
+    void DestroyThis()
+    {
+        Destroy(this.gameObject);
+    } 
 }

@@ -45,6 +45,8 @@ public class Magma_Wing : MonoBehaviour
 
     public bool alertStarted = false;
 
+    public ParticleSystem shootParticle;
+
    [Header("Debug Booleans")]
     [SerializeField] private bool attackStarted;
 
@@ -153,6 +155,7 @@ public class Magma_Wing : MonoBehaviour
         GameObject newFire = Instantiate(fireBall, fireSpawn.position, Quaternion.identity);
         newFire.transform.up = -direction;
         newFire.GetComponent<Rigidbody2D>().velocity = direction * fireBallMovespeed;
+        shootParticle.Play();
         Invoke("FinishAttack", attackEndFrames);
         Follow();
     }

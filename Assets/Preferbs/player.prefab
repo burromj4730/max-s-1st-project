@@ -5882,6 +5882,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   trail: {fileID: 1327425060}
+  magmaDeath: {fileID: 1536291825333290769, guid: bbe93e40e3c2ccf449168c50e9c39b67, type: 3}
 --- !u!1 &5987309382287172327
 GameObject:
   m_ObjectHideFlags: 0
@@ -6006,3 +6007,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tofollow: {fileID: 5987309381783042547}
+  moveTime: 0.05
+  FreezePosition:
+  - startFreezeX: 105
+    freezePosition: {x: 116.65, y: 0}
+    cameraSize: 7
+    endFreezeX: 130
+    islast: 0
+  - startFreezeX: 130
+    freezePosition: {x: 141.63, y: 0.87}
+    cameraSize: 7
+    endFreezeX: 157
+    islast: 1
+  currentPosition: 0
