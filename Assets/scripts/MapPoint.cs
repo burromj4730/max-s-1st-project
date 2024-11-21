@@ -12,4 +12,14 @@ public class MapPoint : MonoBehaviour
     }
 
     public List<AccessiblePoint> canMoveTo = new List<AccessiblePoint>();
+    private void Awake()
+    {
+        foreach (AccessiblePoint ap in canMoveTo)
+        {
+            if (ap.accessiblePoint.parent.GetChild(0).GetComponent<level_Selection>().MState == level_Selection.LevelState.LOCKED)
+            {
+                canMoveTo.Remove(ap);
+            }
+        }
+    }
 }

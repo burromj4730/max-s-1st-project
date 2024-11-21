@@ -28,6 +28,8 @@ public class MagmaWanderer : MonoBehaviour
 
     public GameObject particles;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {

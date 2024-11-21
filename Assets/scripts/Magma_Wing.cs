@@ -28,17 +28,19 @@ public class Magma_Wing : MonoBehaviour
 
     [Header("References, Movement & shooting")]
     public float moveSpeed;
+
     private Transform player;
 
     private Rigidbody2D RB;
-
 
     public float idealDistance;
 
     public float acceleration;
 
     public float fireBallMovespeed;
+
     public GameObject fireBall;
+
     public Transform fireSpawn;
 
     public float attackEndFrames;
@@ -50,7 +52,9 @@ public class Magma_Wing : MonoBehaviour
    [Header("Debug Booleans")]
     [SerializeField] private bool attackStarted;
 
-    [SerializeField] private bool attackCooldown;
+    [SerializeField] private bool attackCooldown = true;
+
+    public ParticleSystem alerted;
 
     // Start is called before the first frame update
     void Start()
@@ -92,9 +96,12 @@ public class Magma_Wing : MonoBehaviour
                 magmaWing.SetBool("Idle", false);
                 magmaWing.SetBool("Alerted", true);
                 magmaWing.SetBool("Agro", false);
+                
                 if (!alertStarted)
                 {
+                    alertStarted = true;
                     Invoke("alertTimer", 0.5f);
+                    alerted.Play();
                 }
                 break;
             case state.AGRO:
@@ -138,6 +145,8 @@ public class Magma_Wing : MonoBehaviour
     void alertTimer()
     {
         currentState = state.IDLE;
+        attackCooldown = true;
+        Invoke("AttackCooldown", timeBetweenAtacks);
     }
     void Attack()
     {

@@ -33,16 +33,16 @@ public class MapPlayerDiagonal : MonoBehaviour
         
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.GetComponent<level_Selection>()!=null)
-        {
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                SceneManager.LoadScene(other.gameObject.GetComponent<level_Selection>().sceneIndex);
-            }
-        }
-    }
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if (other.gameObject.GetComponent<level_Selection>()!=null)
+    //    {
+    //        if (Input.GetKeyDown(KeyCode.Return))
+    //        {
+    //            SceneManager.LoadScene(other.gameObject.GetComponent<level_Selection>().sceneIndex);
+    //        }
+    //    }
+    //}
     private void Update()
     {
         Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));

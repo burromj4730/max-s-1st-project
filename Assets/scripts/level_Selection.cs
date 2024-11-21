@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class level_Selection : MonoBehaviour
 {
@@ -61,5 +62,24 @@ public class level_Selection : MonoBehaviour
             MState = LevelState.UNLOCKED;
         }
     }
-   
+    private void OnCollisionStay(Collision collision)
+    {
+        if (MState != LevelState.LOCKED)
+        {
+            if (Input.GetKey(KeyCode.Return))
+            {
+                SceneManager.LoadScene(sceneIndex);
+            }
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (MState != LevelState.LOCKED)
+        {
+            if (Input.GetKey(KeyCode.Return))
+            {
+                SceneManager.LoadScene(sceneIndex);
+            }
+        }
+    }
 }
