@@ -59,6 +59,7 @@
     <Compile Include="Assets\scripts\MapPoint.cs" />
     <Compile Include="Assets\scripts\Z.cs" />
     <Compile Include="Assets\scripts\Player_Attack.cs" />
+    <Compile Include="Assets\scripts\Magma_Wing.cs" />
     <Compile Include="Assets\scripts\MovingSaw.cs" />
     <Compile Include="Assets\scripts\DisableOtherColliderOnEnter.cs" />
     <Compile Include="Assets\scripts\TransportPipeEnableCollidersLate.cs" />
@@ -94,7 +95,7 @@
     <Compile Include="Assets\scripts\Spiked.cs" />
     <Compile Include="Assets\scripts\MagmaWanderer.cs" />
     <Compile Include="Assets\scripts\Key.cs" />
-    <Compile Include="Assets\scripts\Magma_Wing.cs" />
+    <Compile Include="Assets\scripts\Finish.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
